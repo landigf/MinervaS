@@ -1,0 +1,13 @@
+requests<3,>=2.32
+python-dotenv<2,>=1.0
+scikit-fuzzy<1,>=0.4
+
+[docs]
+sphinx
+sphinx-autodoc-typehints
+sphinx-rtd-theme
+sphinxcontrib-napoleon
+myst-parser
+
+[test]
+pytest

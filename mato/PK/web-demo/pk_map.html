@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_25795797412615777e77a1b5fd99979d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_25795797412615777e77a1b5fd99979d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_25795797412615777e77a1b5fd99979d = L.map(
+                "map_25795797412615777e77a1b5fd99979d",
+                {
+                    center: [45.0660205, 7.6734849999999994],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d78539664605296f34cbcf0e5d36f3e2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d78539664605296f34cbcf0e5d36f3e2.addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+            var circle_marker_3e171c31823274a5a49f91d830fe94f1 = L.circleMarker(
+                [45.063553, 7.683574],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_4780c6c5370c03b647943c93ed3223f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b19591dec8414593ca3ad37b0dd4623f = $(`<div id="html_b19591dec8414593ca3ad37b0dd4623f" style="width: 100.0%; height: 100.0%;"><b>Bodoni</b><br>Posti liberi: 198 / 460<br>Occupazione: 57%</div>`)[0];
+                popup_4780c6c5370c03b647943c93ed3223f6.setContent(html_b19591dec8414593ca3ad37b0dd4623f);
+            
+        
+
+        circle_marker_3e171c31823274a5a49f91d830fe94f1.bindPopup(popup_4780c6c5370c03b647943c93ed3223f6)
+        ;
+
+        
+    
+    
+            var circle_marker_ae6e6bc46ee4de15577a86adff11e6db = L.circleMarker(
+                [45.072478, 7.667162],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_5889f9830408d3ff49ac3159bfb70b6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8748a333e55f69ddbc708c64d8249c6 = $(`<div id="html_c8748a333e55f69ddbc708c64d8249c6" style="width: 100.0%; height: 100.0%;"><b>Bolzano</b><br>Posti liberi: 84 / 858<br>Occupazione: 90%</div>`)[0];
+                popup_5889f9830408d3ff49ac3159bfb70b6e.setContent(html_c8748a333e55f69ddbc708c64d8249c6);
+            
+        
+
+        circle_marker_ae6e6bc46ee4de15577a86adff11e6db.bindPopup(popup_5889f9830408d3ff49ac3159bfb70b6e)
+        ;
+
+        
+    
+    
+            var circle_marker_74d4f3bf9eba21dee560d69b8354b86c = L.circleMarker(
+                [45.042894, 7.677542],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_fcbc7392649918df7e9d58c427a65e1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c54e274d5fc82d4d7136156b3912dd25 = $(`<div id="html_c54e274d5fc82d4d7136156b3912dd25" style="width: 100.0%; height: 100.0%;"><b>D'Azeglio Galilei</b><br>Posti liberi: 44 / 223<br>Occupazione: 80%</div>`)[0];
+                popup_fcbc7392649918df7e9d58c427a65e1d.setContent(html_c54e274d5fc82d4d7136156b3912dd25);
+            
+        
+
+        circle_marker_74d4f3bf9eba21dee560d69b8354b86c.bindPopup(popup_fcbc7392649918df7e9d58c427a65e1d)
+        ;
+
+        
+    
+    
+            var circle_marker_81d8bcc14a42df0a67bca233b1940803 = L.circleMarker(
+                [45.076661393, 7.68030909027],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_8262d90e54e9df01a8cc94a795961bdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_74a86176fb750824dc1103f84a6fb422 = $(`<div id="html_74a86176fb750824dc1103f84a6fb422" style="width: 100.0%; height: 100.0%;"><b>Emanuele Filiberto</b><br>Posti liberi: 61 / 110<br>Occupazione: 45%</div>`)[0];
+                popup_8262d90e54e9df01a8cc94a795961bdd.setContent(html_74a86176fb750824dc1103f84a6fb422);
+            
+        
+
+        circle_marker_81d8bcc14a42df0a67bca233b1940803.bindPopup(popup_8262d90e54e9df01a8cc94a795961bdd)
+        ;
+
+        
+    
+    
+            var circle_marker_17b6d3deaf0e35d1aaa83d924ec25388 = L.circleMarker(
+                [45.067451, 7.672192],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_c6aa7b6901acd512ac82efe13118578f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eee40248763138e17063851e58472ef = $(`<div id="html_3eee40248763138e17063851e58472ef" style="width: 100.0%; height: 100.0%;"><b>Galileo Ferraris</b><br>Posti liberi: 28 / 276<br>Occupazione: 90%</div>`)[0];
+                popup_c6aa7b6901acd512ac82efe13118578f.setContent(html_3eee40248763138e17063851e58472ef);
+            
+        
+
+        circle_marker_17b6d3deaf0e35d1aaa83d924ec25388.bindPopup(popup_c6aa7b6901acd512ac82efe13118578f)
+        ;
+
+        
+    
+    
+            var circle_marker_f8bc0929a878369490d18d0f2400572b = L.circleMarker(
+                [45.031625, 7.662682],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_60ac2f076fff0ac678f6534a24c6dee3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ee67092b40ac8db11fabb8ce3b4b397 = $(`<div id="html_9ee67092b40ac8db11fabb8ce3b4b397" style="width: 100.0%; height: 100.0%;"><b>Lingotto</b><br>Posti liberi: 2852 / 3100<br>Occupazione: 8%</div>`)[0];
+                popup_60ac2f076fff0ac678f6534a24c6dee3.setContent(html_9ee67092b40ac8db11fabb8ce3b4b397);
+            
+        
+
+        circle_marker_f8bc0929a878369490d18d0f2400572b.bindPopup(popup_60ac2f076fff0ac678f6534a24c6dee3)
+        ;
+
+        
+    
+    
+            var circle_marker_65c6dc903c6614f797131e466466c239 = L.circleMarker(
+                [45.058585, 7.683419],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_331c99d55f3fccbfe2bc324357fa7076 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8da7197479fd1a259cd291d8bbd0f8d3 = $(`<div id="html_8da7197479fd1a259cd291d8bbd0f8d3" style="width: 100.0%; height: 100.0%;"><b>Madama Cristina</b><br>Posti liberi: 138 / 259<br>Occupazione: 47%</div>`)[0];
+                popup_331c99d55f3fccbfe2bc324357fa7076.setContent(html_8da7197479fd1a259cd291d8bbd0f8d3);
+            
+        
+
+        circle_marker_65c6dc903c6614f797131e466466c239.bindPopup(popup_331c99d55f3fccbfe2bc324357fa7076)
+        ;
+
+        
+    
+    
+            var circle_marker_aaa7d7444b47948668da383d73ec912f = L.circleMarker(
+                [45.040852, 7.668902],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_26b5e79095a36308a6d7d9507ff53aec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b6e72d82682400b00e7b8403d840074 = $(`<div id="html_4b6e72d82682400b00e7b8403d840074" style="width: 100.0%; height: 100.0%;"><b>Nizza</b><br>Posti liberi: 190 / 371<br>Occupazione: 49%</div>`)[0];
+                popup_26b5e79095a36308a6d7d9507ff53aec.setContent(html_4b6e72d82682400b00e7b8403d840074);
+            
+        
+
+        circle_marker_aaa7d7444b47948668da383d73ec912f.bindPopup(popup_26b5e79095a36308a6d7d9507ff53aec)
+        ;
+
+        
+    
+    
+            var circle_marker_ffba7f6137aa3289f8d1b9e61557ce73 = L.circleMarker(
+                [45.069353, 7.661091],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_b32f19b04fa978a4a8f717aa3ab5b7dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00ec737669e98f2bf6852f231d51058f = $(`<div id="html_00ec737669e98f2bf6852f231d51058f" style="width: 100.0%; height: 100.0%;"><b>Palagiustizia</b><br>Posti liberi: 298 / 616<br>Occupazione: 52%</div>`)[0];
+                popup_b32f19b04fa978a4a8f717aa3ab5b7dd.setContent(html_00ec737669e98f2bf6852f231d51058f);
+            
+        
+
+        circle_marker_ffba7f6137aa3289f8d1b9e61557ce73.bindPopup(popup_b32f19b04fa978a4a8f717aa3ab5b7dd)
+        ;
+
+        
+    
+    
+            var circle_marker_9227fa16dfa8df70b47aa7fe77e98206 = L.circleMarker(
+                [45.07646, 7.686467],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_91a1273d0640b0973b0b83f70deb3c17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f55c74dc26397870e707a50812ab2113 = $(`<div id="html_f55c74dc26397870e707a50812ab2113" style="width: 100.0%; height: 100.0%;"><b>Porta Palazzo</b><br>Posti liberi: 432 / 653<br>Occupazione: 34%</div>`)[0];
+                popup_91a1273d0640b0973b0b83f70deb3c17.setContent(html_f55c74dc26397870e707a50812ab2113);
+            
+        
+
+        circle_marker_9227fa16dfa8df70b47aa7fe77e98206.bindPopup(popup_91a1273d0640b0973b0b83f70deb3c17)
+        ;
+
+        
+    
+    
+            var circle_marker_a53a8cc6efa3d523b1b379fd6b02369a = L.circleMarker(
+                [45.073845, 7.68372],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_508c4b61fe2bd04c9f00c96305702536 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2577745311acf7f1f56bc971f8b1d7fe = $(`<div id="html_2577745311acf7f1f56bc971f8b1d7fe" style="width: 100.0%; height: 100.0%;"><b>Santo Stefano</b><br>Posti liberi: 35 / 344<br>Occupazione: 90%</div>`)[0];
+                popup_508c4b61fe2bd04c9f00c96305702536.setContent(html_2577745311acf7f1f56bc971f8b1d7fe);
+            
+        
+
+        circle_marker_a53a8cc6efa3d523b1b379fd6b02369a.bindPopup(popup_508c4b61fe2bd04c9f00c96305702536)
+        ;
+
+        
+    
+    
+            var circle_marker_f17cf059f60cea9f28e978b9752ebf6c = L.circleMarker(
+                [45.067, 7.67583],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_f47dc8fc2f9cc0f308538475f205df69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de70bdd27d01580895454603c0ee2d9b = $(`<div id="html_de70bdd27d01580895454603c0ee2d9b" style="width: 100.0%; height: 100.0%;"><b>Re Umberto</b><br>Posti liberi: 3 / 125<br>Occupazione: 98%</div>`)[0];
+                popup_f47dc8fc2f9cc0f308538475f205df69.setContent(html_de70bdd27d01580895454603c0ee2d9b);
+            
+        
+
+        circle_marker_f17cf059f60cea9f28e978b9752ebf6c.bindPopup(popup_f47dc8fc2f9cc0f308538475f205df69)
+        ;
+
+        
+    
+    
+            var circle_marker_6f50951be75ef154465d63de794274b2 = L.circleMarker(
+                [45.063992, 7.680366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_88e0c95c4ec8bbc240707b80d72868ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b334928824b9dbf93f128178d7588f4 = $(`<div id="html_1b334928824b9dbf93f128178d7588f4" style="width: 100.0%; height: 100.0%;"><b>Roma S.Carlo Castello</b><br>Posti liberi: 122 / 786<br>Occupazione: 84%</div>`)[0];
+                popup_88e0c95c4ec8bbc240707b80d72868ce.setContent(html_1b334928824b9dbf93f128178d7588f4);
+            
+        
+
+        circle_marker_6f50951be75ef154465d63de794274b2.bindPopup(popup_88e0c95c4ec8bbc240707b80d72868ce)
+        ;
+
+        
+    
+    
+            var circle_marker_9213ede77e21206fe654ad72e01b143a = L.circleMarker(
+                [45.033647, 7.672969],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_25bd268770d11f1134588b07e4bb2769 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99449551253ad70eaf8ee39d892fe08 = $(`<div id="html_a99449551253ad70eaf8ee39d892fe08" style="width: 100.0%; height: 100.0%;"><b>Ventimiglia</b><br>Posti liberi: 133 / 303<br>Occupazione: 56%</div>`)[0];
+                popup_25bd268770d11f1134588b07e4bb2769.setContent(html_a99449551253ad70eaf8ee39d892fe08);
+            
+        
+
+        circle_marker_9213ede77e21206fe654ad72e01b143a.bindPopup(popup_25bd268770d11f1134588b07e4bb2769)
+        ;
+
+        
+    
+    
+            var circle_marker_c08426193a1f41f41f7b3b0195193e03 = L.circleMarker(
+                [45.070346, 7.70501],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_9189c35c56234cb330ac777460aa1542 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f267c69831a510f84d3da0b8a24adf6 = $(`<div id="html_2f267c69831a510f84d3da0b8a24adf6" style="width: 100.0%; height: 100.0%;"><b>Fontanesi</b><br>Posti liberi: 88 / 358<br>Occupazione: 75%</div>`)[0];
+                popup_9189c35c56234cb330ac777460aa1542.setContent(html_2f267c69831a510f84d3da0b8a24adf6);
+            
+        
+
+        circle_marker_c08426193a1f41f41f7b3b0195193e03.bindPopup(popup_9189c35c56234cb330ac777460aa1542)
+        ;
+
+        
+    
+    
+            var circle_marker_8b1d7ddd4d4becdf2588fab8ad592e2c = L.circleMarker(
+                [45.069825, 7.646689],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_4a30ebfce7644b9c41577617849d6d28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_469a5c7a69900bfeff9d601cca8da678 = $(`<div id="html_469a5c7a69900bfeff9d601cca8da678" style="width: 100.0%; height: 100.0%;"><b>Racconigi</b><br>Posti liberi: 0 / 100<br>Occupazione: 100%</div>`)[0];
+                popup_4a30ebfce7644b9c41577617849d6d28.setContent(html_469a5c7a69900bfeff9d601cca8da678);
+            
+        
+
+        circle_marker_8b1d7ddd4d4becdf2588fab8ad592e2c.bindPopup(popup_4a30ebfce7644b9c41577617849d6d28)
+        ;
+
+        
+    
+    
+            var circle_marker_10e91273a2046035fbb2fa3a9d79ad71 = L.circleMarker(
+                [45.065041, 7.687613],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_659259e6ea0034e1a380185aaff20f4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62a222265bb29c7cc20200634c50bfbc = $(`<div id="html_62a222265bb29c7cc20200634c50bfbc" style="width: 100.0%; height: 100.0%;"><b>Valdo Fusi</b><br>Posti liberi: 86 / 457<br>Occupazione: 81%</div>`)[0];
+                popup_659259e6ea0034e1a380185aaff20f4b.setContent(html_62a222265bb29c7cc20200634c50bfbc);
+            
+        
+
+        circle_marker_10e91273a2046035fbb2fa3a9d79ad71.bindPopup(popup_659259e6ea0034e1a380185aaff20f4b)
+        ;
+
+        
+    
+    
+            var circle_marker_b6131758bbe1475e008d9c5571c4491a = L.circleMarker(
+                [45.064056, 7.667003],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_d5056e276d947382e7d8862f26cb6a00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18924879ce8845afed88f3ed60fbe310 = $(`<div id="html_18924879ce8845afed88f3ed60fbe310" style="width: 100.0%; height: 100.0%;"><b>Stati Uniti</b><br>Posti liberi: 181 / 500<br>Occupazione: 64%</div>`)[0];
+                popup_d5056e276d947382e7d8862f26cb6a00.setContent(html_18924879ce8845afed88f3ed60fbe310);
+            
+        
+
+        circle_marker_b6131758bbe1475e008d9c5571c4491a.bindPopup(popup_d5056e276d947382e7d8862f26cb6a00)
+        ;
+
+        
+    
+    
+            var circle_marker_6a7a24dc6e28b686ef2b7f43df41805b = L.circleMarker(
+                [45.028627, 7.640286],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_31c4730d0373dba795881cd692afc8f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b7b5090bdc5b23c15071e84a7fd2e27 = $(`<div id="html_0b7b5090bdc5b23c15071e84a7fd2e27" style="width: 100.0%; height: 100.0%;"><b>Caio Mario</b><br>Posti liberi: 409 / 418<br>Occupazione: 2%</div>`)[0];
+                popup_31c4730d0373dba795881cd692afc8f6.setContent(html_0b7b5090bdc5b23c15071e84a7fd2e27);
+            
+        
+
+        circle_marker_6a7a24dc6e28b686ef2b7f43df41805b.bindPopup(popup_31c4730d0373dba795881cd692afc8f6)
+        ;
+
+        
+    
+    
+            var circle_marker_24683d5e61a1020b15d88cb67894bb33 = L.circleMarker(
+                [45.076464, 7.591056],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_87e4a61a0a742d2426d2ebad27ad4ade = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41dad15492befe49920135e73afcf87e = $(`<div id="html_41dad15492befe49920135e73afcf87e" style="width: 100.0%; height: 100.0%;"><b>Fermi</b><br>Posti liberi: 0 / 300<br>Occupazione: 100%</div>`)[0];
+                popup_87e4a61a0a742d2426d2ebad27ad4ade.setContent(html_41dad15492befe49920135e73afcf87e);
+            
+        
+
+        circle_marker_24683d5e61a1020b15d88cb67894bb33.bindPopup(popup_87e4a61a0a742d2426d2ebad27ad4ade)
+        ;
+
+        
+    
+    
+            var circle_marker_3fe4bad07846d4b951dfd33e91a1152d = L.circleMarker(
+                [45.038575, 7.675885],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_ef7f8728432ce84255542605846d9132 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c946ace0586c55a3c48a61a55850c82e = $(`<div id="html_c946ace0586c55a3c48a61a55850c82e" style="width: 100.0%; height: 100.0%;"><b>Molinette</b><br>Posti liberi: 164 / 481<br>Occupazione: 66%</div>`)[0];
+                popup_ef7f8728432ce84255542605846d9132.setContent(html_c946ace0586c55a3c48a61a55850c82e);
+            
+        
+
+        circle_marker_3fe4bad07846d4b951dfd33e91a1152d.bindPopup(popup_ef7f8728432ce84255542605846d9132)
+        ;
+
+        
+    
+    
+            var circle_marker_255aa58847eaf8fb8ce5370f9be586ff = L.circleMarker(
+                [45.095568, 7.716923],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_4d40cac27e98cb0055e032ca7ec73e62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_372db0746457398cbb62cf38c4ab0033 = $(`<div id="html_372db0746457398cbb62cf38c4ab0033" style="width: 100.0%; height: 100.0%;"><b>Sofia</b><br>Posti liberi: 150 / 272<br>Occupazione: 45%</div>`)[0];
+                popup_4d40cac27e98cb0055e032ca7ec73e62.setContent(html_372db0746457398cbb62cf38c4ab0033);
+            
+        
+
+        circle_marker_255aa58847eaf8fb8ce5370f9be586ff.bindPopup(popup_4d40cac27e98cb0055e032ca7ec73e62)
+        ;
+
+        
+    
+    
+            var circle_marker_2520f4f1589628803d3c46ced7d94e1a = L.circleMarker(
+                [45.120578, 7.711557],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_1ea92bf99aa91b6f85c74bc704e53077 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a13c94630358b8c26290be485451e433 = $(`<div id="html_a13c94630358b8c26290be485451e433" style="width: 100.0%; height: 100.0%;"><b>Stura</b><br>Posti liberi: 469 / 589<br>Occupazione: 20%</div>`)[0];
+                popup_1ea92bf99aa91b6f85c74bc704e53077.setContent(html_a13c94630358b8c26290be485451e433);
+            
+        
+
+        circle_marker_2520f4f1589628803d3c46ced7d94e1a.bindPopup(popup_1ea92bf99aa91b6f85c74bc704e53077)
+        ;
+
+        
+    
+    
+            var circle_marker_c021fc1b0d910f281ca1d8e9c63e4ccc = L.circleMarker(
+                [45.064784, 7.695425],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_8f92cc30eecf43a2e3c0b6d04c0c4710 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dd17b6e00f67c174d7867852f4c8b2d = $(`<div id="html_1dd17b6e00f67c174d7867852f4c8b2d" style="width: 100.0%; height: 100.0%;"><b>Vittorio</b><br>Posti liberi: 135 / 476<br>Occupazione: 72%</div>`)[0];
+                popup_8f92cc30eecf43a2e3c0b6d04c0c4710.setContent(html_1dd17b6e00f67c174d7867852f4c8b2d);
+            
+        
+
+        circle_marker_c021fc1b0d910f281ca1d8e9c63e4ccc.bindPopup(popup_8f92cc30eecf43a2e3c0b6d04c0c4710)
+        ;
+
+        
+    
+    
+            var circle_marker_57cef03be3633fc956b0ca0dc869804d = L.circleMarker(
+                [45.050827, 7.682977],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_9287be486fff19d7382faffb96babed1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c1017c0aca30d7e969fbc2808d27602 = $(`<div id="html_8c1017c0aca30d7e969fbc2808d27602" style="width: 100.0%; height: 100.0%;"><b>V Padiglione</b><br>Posti liberi: 0 / 327<br>Occupazione: 100%</div>`)[0];
+                popup_9287be486fff19d7382faffb96babed1.setContent(html_8c1017c0aca30d7e969fbc2808d27602);
+            
+        
+
+        circle_marker_57cef03be3633fc956b0ca0dc869804d.bindPopup(popup_9287be486fff19d7382faffb96babed1)
+        ;
+
+        
+    
+    
+            var circle_marker_f488433ae13a55f51f1fd4b833bbbe76 = L.circleMarker(
+                [45.033603, 7.67349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_8b20fecb286f030cc661ef324c0bafd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09f815fb7157ba4c7900af75b5f3f74e = $(`<div id="html_09f815fb7157ba4c7900af75b5f3f74e" style="width: 100.0%; height: 100.0%;"><b>Cto</b><br>Posti liberi: 102 / 161<br>Occupazione: 37%</div>`)[0];
+                popup_8b20fecb286f030cc661ef324c0bafd7.setContent(html_09f815fb7157ba4c7900af75b5f3f74e);
+            
+        
+
+        circle_marker_f488433ae13a55f51f1fd4b833bbbe76.bindPopup(popup_8b20fecb286f030cc661ef324c0bafd7)
+        ;
+
+        
+    
+    
+            var circle_marker_bcbf19ddedf025a608355746cc9c2333 = L.circleMarker(
+                [45.01192, 7.62291],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_0d157c4fc791b348754fec33d2f990b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14b0a31f8da000f30287049e86cbbb26 = $(`<div id="html_14b0a31f8da000f30287049e86cbbb26" style="width: 100.0%; height: 100.0%;"><b>Unione Sovietica</b><br>Posti liberi: 0 / 150<br>Occupazione: 100%</div>`)[0];
+                popup_0d157c4fc791b348754fec33d2f990b5.setContent(html_14b0a31f8da000f30287049e86cbbb26);
+            
+        
+
+        circle_marker_bcbf19ddedf025a608355746cc9c2333.bindPopup(popup_0d157c4fc791b348754fec33d2f990b5)
+        ;
+
+        
+    
+    
+            var circle_marker_a6a78889da5e69b0e4495def1f95ee92 = L.circleMarker(
+                [45.036604, 7.672489],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_fe69cab85eda2e70d2bdd3636f7c8b33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b220f016d0b27b312f4f5148aa62100 = $(`<div id="html_4b220f016d0b27b312f4f5148aa62100" style="width: 100.0%; height: 100.0%;"><b>Bacigalupo</b><br>Posti liberi: 184 / 326<br>Occupazione: 44%</div>`)[0];
+                popup_fe69cab85eda2e70d2bdd3636f7c8b33.setContent(html_4b220f016d0b27b312f4f5148aa62100);
+            
+        
+
+        circle_marker_a6a78889da5e69b0e4495def1f95ee92.bindPopup(popup_fe69cab85eda2e70d2bdd3636f7c8b33)
+        ;
+
+        
+    
+    
+            var circle_marker_f66de251e55035cc787eaa071f839f7f = L.circleMarker(
+                [45.06879, 7.65565],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_26c8c447462dd33a4c27ea04201b7a67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c01bffdffa579f97eb6fa2142c955e03 = $(`<div id="html_c01bffdffa579f97eb6fa2142c955e03" style="width: 100.0%; height: 100.0%;"><b>Bixio</b><br>Posti liberi: 148 / 255<br>Occupazione: 42%</div>`)[0];
+                popup_26c8c447462dd33a4c27ea04201b7a67.setContent(html_c01bffdffa579f97eb6fa2142c955e03);
+            
+        
+
+        circle_marker_f66de251e55035cc787eaa071f839f7f.bindPopup(popup_26c8c447462dd33a4c27ea04201b7a67)
+        ;
+
+        
+    
+    
+            var circle_marker_d33bae49bf1d902c6537539bf2aadf53 = L.circleMarker(
+                [45.074104, 7.615765],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_68d85d1dc11974042555318f06cd9173 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1130da44c372115110eebb2ef111e73f = $(`<div id="html_1130da44c372115110eebb2ef111e73f" style="width: 100.0%; height: 100.0%;"><b>Venchi Unica</b><br>Posti liberi: 244 / 437<br>Occupazione: 44%</div>`)[0];
+                popup_68d85d1dc11974042555318f06cd9173.setContent(html_1130da44c372115110eebb2ef111e73f);
+            
+        
+
+        circle_marker_d33bae49bf1d902c6537539bf2aadf53.bindPopup(popup_68d85d1dc11974042555318f06cd9173)
+        ;
+
+        
+    
+    
+            var circle_marker_f47f1d631bfd294d68cabda9c1086a73 = L.circleMarker(
+                [45.02803, 7.63973],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_464c13fb2e7c92b6982b18cc27e127a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3f7b4d228ab2a51bbc3de1be66f3962 = $(`<div id="html_f3f7b4d228ab2a51bbc3de1be66f3962" style="width: 100.0%; height: 100.0%;"><b>Caio Mario Camper</b><br>Posti liberi: 50 / 57<br>Occupazione: 12%</div>`)[0];
+                popup_464c13fb2e7c92b6982b18cc27e127a1.setContent(html_f3f7b4d228ab2a51bbc3de1be66f3962);
+            
+        
+
+        circle_marker_f47f1d631bfd294d68cabda9c1086a73.bindPopup(popup_464c13fb2e7c92b6982b18cc27e127a1)
+        ;
+
+        
+    
+    
+            var circle_marker_68800b188a8fc8113e6d4c0d579287e2 = L.circleMarker(
+                [45.06293, 7.67776],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_6e214757a8555d6003fdcd750e8287e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94c633e148069745717267a5765c84e0 = $(`<div id="html_94c633e148069745717267a5765c84e0" style="width: 100.0%; height: 100.0%;"><b>Porta Nuova Fs</b><br>Posti liberi: 11 / 242<br>Occupazione: 95%</div>`)[0];
+                popup_6e214757a8555d6003fdcd750e8287e9.setContent(html_94c633e148069745717267a5765c84e0);
+            
+        
+
+        circle_marker_68800b188a8fc8113e6d4c0d579287e2.bindPopup(popup_6e214757a8555d6003fdcd750e8287e9)
+        ;
+
+        
+    
+    
+            var circle_marker_0c9cfa2a768ee493bb9030239165d0fd = L.circleMarker(
+                [45.07301, 7.66718],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_446408fa2646312250b1f479cefd1f1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8854c13b34b636585dde8039d9d49dc3 = $(`<div id="html_8854c13b34b636585dde8039d9d49dc3" style="width: 100.0%; height: 100.0%;"><b>Porta Susa Fs</b><br>Posti liberi: 6 / 123<br>Occupazione: 95%</div>`)[0];
+                popup_446408fa2646312250b1f479cefd1f1d.setContent(html_8854c13b34b636585dde8039d9d49dc3);
+            
+        
+
+        circle_marker_0c9cfa2a768ee493bb9030239165d0fd.bindPopup(popup_446408fa2646312250b1f479cefd1f1d)
+        ;
+
+        
+    
+    
+            var circle_marker_712d89aac8d152f0e85a61a63313468f = L.circleMarker(
+                [45.07961, 7.69175],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_6d414f59f4fa44480c99154408d77acc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6d1be901be8203e24c0c9656da321c5 = $(`<div id="html_a6d1be901be8203e24c0c9656da321c5" style="width: 100.0%; height: 100.0%;"><b>Ancona</b><br>Posti liberi: 26 / 148<br>Occupazione: 82%</div>`)[0];
+                popup_6d414f59f4fa44480c99154408d77acc.setContent(html_a6d1be901be8203e24c0c9656da321c5);
+            
+        
+
+        circle_marker_712d89aac8d152f0e85a61a63313468f.bindPopup(popup_6d414f59f4fa44480c99154408d77acc)
+        ;
+
+        
+    
+    
+            var circle_marker_1975b80a5517f659d04eb3d577bc8bb1 = L.circleMarker(
+                [45.07339, 7.67184],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_d5a247b8c100cbff6d041d057b83890b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5521bf524428c5e8a8ad16e29e1b73d9 = $(`<div id="html_5521bf524428c5e8a8ad16e29e1b73d9" style="width: 100.0%; height: 100.0%;"><b>Palestro</b><br>Posti liberi: 6 / 113<br>Occupazione: 95%</div>`)[0];
+                popup_d5a247b8c100cbff6d041d057b83890b.setContent(html_5521bf524428c5e8a8ad16e29e1b73d9);
+            
+        
+
+        circle_marker_1975b80a5517f659d04eb3d577bc8bb1.bindPopup(popup_d5a247b8c100cbff6d041d057b83890b)
+        ;
+
+        
+    
+    
+            var circle_marker_b3c95ad5d824a5bbd5f7061b2680d98b = L.circleMarker(
+                [45.06936, 7.67348],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_716a0096c1d3423ebe43e4dd4909bc33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5189d99f3bac329ad6b61d805b538712 = $(`<div id="html_5189d99f3bac329ad6b61d805b538712" style="width: 100.0%; height: 100.0%;"><b>Cernaia</b><br>Posti liberi: 16 / 94<br>Occupazione: 83%</div>`)[0];
+                popup_716a0096c1d3423ebe43e4dd4909bc33.setContent(html_5189d99f3bac329ad6b61d805b538712);
+            
+        
+
+        circle_marker_b3c95ad5d824a5bbd5f7061b2680d98b.bindPopup(popup_716a0096c1d3423ebe43e4dd4909bc33)
+        ;
+
+        
+    
+    
+            var circle_marker_d7b8b0589effb8c357ae6def908916c8 = L.circleMarker(
+                [45.04709, 7.68091],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_24e24e716234c904beb86950b7f6c31e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a152ad8fd2829b0637881841032639c = $(`<div id="html_6a152ad8fd2829b0637881841032639c" style="width: 100.0%; height: 100.0%;"><b>Monti</b><br>Posti liberi: 13 / 153<br>Occupazione: 92%</div>`)[0];
+                popup_24e24e716234c904beb86950b7f6c31e.setContent(html_6a152ad8fd2829b0637881841032639c);
+            
+        
+
+        circle_marker_d7b8b0589effb8c357ae6def908916c8.bindPopup(popup_24e24e716234c904beb86950b7f6c31e)
+        ;
+
+        
+    
+    
+            var circle_marker_532d2fc182c008294f806040131b8afb = L.circleMarker(
+                [45.07768, 7.68379],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_b75502a705b38e59f8d20f65770b2b1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27cf76472c8cea619311bf56d67806f8 = $(`<div id="html_27cf76472c8cea619311bf56d67806f8" style="width: 100.0%; height: 100.0%;"><b>Mercato Centrale</b><br>Posti liberi: 80 / 110<br>Occupazione: 27%</div>`)[0];
+                popup_b75502a705b38e59f8d20f65770b2b1c.setContent(html_27cf76472c8cea619311bf56d67806f8);
+            
+        
+
+        circle_marker_532d2fc182c008294f806040131b8afb.bindPopup(popup_b75502a705b38e59f8d20f65770b2b1c)
+        ;
+
+        
+    
+    
+            var circle_marker_3b4ace9c6cdba10312a2ae98f198a9e4 = L.circleMarker(
+                [45.08301, 7.65785],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_46a46e457db7ab59165ecbfb79829949 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67bd22c13d04bf8675bf8a31769cd619 = $(`<div id="html_67bd22c13d04bf8675bf8a31769cd619" style="width: 100.0%; height: 100.0%;"><b>Richelmy</b><br>Posti liberi: 62 / 115<br>Occupazione: 46%</div>`)[0];
+                popup_46a46e457db7ab59165ecbfb79829949.setContent(html_67bd22c13d04bf8675bf8a31769cd619);
+            
+        
+
+        circle_marker_3b4ace9c6cdba10312a2ae98f198a9e4.bindPopup(popup_46a46e457db7ab59165ecbfb79829949)
+        ;
+
+        
+    
+    
+            var circle_marker_63884a116dbfcfb59710945259c038b9 = L.circleMarker(
+                [45.061756, 7.642471],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_25795797412615777e77a1b5fd99979d);
+        
+    
+        var popup_2260df636d7536681101f48ab63c9e3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0714f00c72c03df4fd9ca941344c1b66 = $(`<div id="html_0714f00c72c03df4fd9ca941344c1b66" style="width: 100.0%; height: 100.0%;"><b>Lancia</b><br>Posti liberi: 157 / 323<br>Occupazione: 51%</div>`)[0];
+                popup_2260df636d7536681101f48ab63c9e3a.setContent(html_0714f00c72c03df4fd9ca941344c1b66);
+            
+        
+
+        circle_marker_63884a116dbfcfb59710945259c038b9.bindPopup(popup_2260df636d7536681101f48ab63c9e3a)
+        ;
+
+        
+    
+</script>
+</html>

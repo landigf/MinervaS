@@ -1,0 +1,765 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.66865,
+              45.06872
+            ],
+            [
+              7.67125,
+              45.07245
+            ],
+            [
+              7.67143,
+              45.07257
+            ],
+            [
+              7.67182,
+              45.07246
+            ],
+            [
+              7.67341,
+              45.07472
+            ],
+            [
+              7.67624,
+              45.07878
+            ],
+            [
+              7.67657,
+              45.07886
+            ],
+            [
+              7.68221,
+              45.07698
+            ],
+            [
+              7.682,
+              45.07658
+            ],
+            [
+              7.68222,
+              45.07614
+            ],
+            [
+              7.68278,
+              45.07598
+            ],
+            [
+              7.68248,
+              45.07547
+            ],
+            [
+              7.68308,
+              45.07524
+            ],
+            [
+              7.68341,
+              45.07574
+            ],
+            [
+              7.68389,
+              45.07556
+            ],
+            [
+              7.68457,
+              45.07574
+            ],
+            [
+              7.68478,
+              45.07614
+            ],
+            [
+              7.68885,
+              45.07473
+            ],
+            [
+              7.68903,
+              45.07461
+            ],
+            [
+              7.68917,
+              45.0745
+            ],
+            [
+              7.68896,
+              45.07423
+            ],
+            [
+              7.68885,
+              45.07391
+            ],
+            [
+              7.68896,
+              45.07362
+            ],
+            [
+              7.68979,
+              45.07269
+            ],
+            [
+              7.68993,
+              45.07223
+            ],
+            [
+              7.68981,
+              45.07211
+            ],
+            [
+              7.68989,
+              45.07199
+            ],
+            [
+              7.69013,
+              45.07191
+            ],
+            [
+              7.69141,
+              45.07238
+            ],
+            [
+              7.69351,
+              45.07025
+            ],
+            [
+              7.69546,
+              45.0683
+            ],
+            [
+              7.69497,
+              45.06755
+            ],
+            [
+              7.69483,
+              45.06751
+            ],
+            [
+              7.69472,
+              45.06732
+            ],
+            [
+              7.69727,
+              45.06638
+            ],
+            [
+              7.69741,
+              45.06636
+            ],
+            [
+              7.69833,
+              45.06543
+            ],
+            [
+              7.69704,
+              45.06445
+            ],
+            [
+              7.69444,
+              45.06616
+            ],
+            [
+              7.69423,
+              45.06618
+            ],
+            [
+              7.69409,
+              45.06601
+            ],
+            [
+              7.69353,
+              45.06563
+            ],
+            [
+              7.69347,
+              45.06531
+            ],
+            [
+              7.69597,
+              45.06363
+            ],
+            [
+              7.69469,
+              45.06262
+            ],
+            [
+              7.69424,
+              45.0625
+            ],
+            [
+              7.69446,
+              45.06263
+            ],
+            [
+              7.69427,
+              45.06275
+            ],
+            [
+              7.69385,
+              45.06287
+            ],
+            [
+              7.69223,
+              45.06091
+            ],
+            [
+              7.69073,
+              45.05896
+            ],
+            [
+              7.69026,
+              45.0589
+            ],
+            [
+              7.68631,
+              45.06032
+            ],
+            [
+              7.67959,
+              45.06269
+            ],
+            [
+              7.68026,
+              45.06355
+            ],
+            [
+              7.68104,
+              45.0633
+            ],
+            [
+              7.68117,
+              45.0635
+            ],
+            [
+              7.68053,
+              45.06372
+            ],
+            [
+              7.68057,
+              45.0639
+            ],
+            [
+              7.68036,
+              45.06434
+            ],
+            [
+              7.68009,
+              45.06445
+            ],
+            [
+              7.67933,
+              45.06433
+            ],
+            [
+              7.67923,
+              45.06422
+            ],
+            [
+              7.67877,
+              45.06437
+            ],
+            [
+              7.67852,
+              45.06402
+            ],
+            [
+              7.67899,
+              45.06384
+            ],
+            [
+              7.67861,
+              45.06315
+            ],
+            [
+              7.67563,
+              45.06419
+            ],
+            [
+              7.67453,
+              45.06456
+            ],
+            [
+              7.67569,
+              45.06618
+            ],
+            [
+              7.67413,
+              45.06675
+            ],
+            [
+              7.67186,
+              45.06759
+            ],
+            [
+              7.66889,
+              45.06862
+            ],
+            [
+              7.66865,
+              45.06872
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": 1,
+        "name": "ZTL Centrale"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6893,
+          45.07165
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "name": "I Maggio",
+        "heading": 244
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.68016,
+          45.064309
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "name": "Roma",
+        "heading": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.679446,
+          45.075728
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "name": "Orfane",
+        "heading": 206
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.680162,
+          45.076609
+        ]
+      },
+      "properties": {
+        "id": 10,
+        "name": "Emanuele Filiberto",
+        "heading": 116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.684046,
+          45.075335
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "name": "Egidi",
+        "heading": 205
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.693348,
+          45.065546
+        ]
+      },
+      "properties": {
+        "id": 14,
+        "name": "Principe Amedeo",
+        "heading": 299
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.693534,
+          45.066051
+        ]
+      },
+      "properties": {
+        "id": 15,
+        "name": "Po 1",
+        "heading": 312
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.693503,
+          45.066019
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "name": "Po 2",
+        "heading": 313
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.671719,
+          45.072394
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "name": "Cernaia 1",
+        "heading": 116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67169,
+          45.072351
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "name": "Cernaia 2",
+        "heading": 117
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.670163,
+          45.071058
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "name": "Valfr\u00e8",
+        "heading": 116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.669514,
+          45.070111
+        ]
+      },
+      "properties": {
+        "id": 20,
+        "name": "De Sonnaz",
+        "heading": 114
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.66916,
+          45.068493
+        ]
+      },
+      "properties": {
+        "id": 21,
+        "name": "Donati",
+        "heading": 28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.670576,
+          45.068012
+        ]
+      },
+      "properties": {
+        "id": 22,
+        "name": "Avogadro",
+        "heading": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.672207,
+          45.067535
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "name": "G.Ferraris",
+        "heading": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.675279,
+          45.066314
+        ]
+      },
+      "properties": {
+        "id": 25,
+        "name": "Re Umberto",
+        "heading": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.675513,
+          45.066053
+        ]
+      },
+      "properties": {
+        "id": 28,
+        "name": "Matteotti 2",
+        "heading": 115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.675946,
+          45.064072
+        ]
+      },
+      "properties": {
+        "id": 29,
+        "name": "Melchiorre Gioia",
+        "heading": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.685063,
+          45.060785
+        ]
+      },
+      "properties": {
+        "id": 30,
+        "name": "Accademia Albertina",
+        "heading": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.686433,
+          45.060275
+        ]
+      },
+      "properties": {
+        "id": 31,
+        "name": "S.Massimo",
+        "heading": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.689392,
+          45.059178
+        ]
+      },
+      "properties": {
+        "id": 32,
+        "name": "Della Rocca",
+        "heading": 26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.692221,
+          45.060813
+        ]
+      },
+      "properties": {
+        "id": 33,
+        "name": "Dei Mille",
+        "heading": 298
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.693863,
+          45.062825
+        ]
+      },
+      "properties": {
+        "id": 34,
+        "name": "Giolitti",
+        "heading": 296
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.693686,
+          45.065205
+        ]
+      },
+      "properties": {
+        "id": 35,
+        "name": "Plana",
+        "heading": 219
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.681702,
+          45.062024
+        ]
+      },
+      "properties": {
+        "id": 37,
+        "name": "Carlo Alberto",
+        "heading": 25
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.694834,
+          45.069068
+        ]
+      },
+      "properties": {
+        "id": 38,
+        "name": "S.Ottavio",
+        "heading": 206
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67582,
+          45.078149
+        ]
+      },
+      "properties": {
+        "id": 39,
+        "name": "Giulio",
+        "heading": 116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.674787,
+          45.076653
+        ]
+      },
+      "properties": {
+        "id": 40,
+        "name": "S.Domenico",
+        "heading": 116
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.673253,
+          45.074513
+        ]
+      },
+      "properties": {
+        "id": 41,
+        "name": "Bertrandi",
+        "heading": 115
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.672765,
+          45.073793
+        ]
+      },
+      "properties": {
+        "id": 42,
+        "name": "Juvarra",
+        "heading": 116
+      }
+    }
+  ]
+}

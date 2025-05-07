@@ -1,0 +1,33 @@
+[project]
+name = "ODHconnector"
+version = "0.1.0"
+description = "Ponte dati fra MinervaS e OpenDataHub (meteo & traffico)"
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+  { name = "Landi Gennaro Francesco" },
+  { name = "Palmisano Elettra" }
+]
+
+# dipendenze base
+dependencies = [
+  "requests>=2.32,<3",
+  "python-dotenv>=1.0,<2",
+  "scikit-fuzzy>=0.4,<1"
+]
+
+# gruppi extra
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+  "sphinx-autodoc-typehints",
+  "sphinx-rtd-theme",
+  "sphinxcontrib-napoleon",
+  "myst-parser"
+]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

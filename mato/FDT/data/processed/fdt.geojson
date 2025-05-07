@@ -1,0 +1,3134 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.199642,
+          44.955301
+        ]
+      },
+      "properties": {
+        "lcd1": 4855,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 2183,
+        "direction": "positive",
+        "accuracy": 94,
+        "period_min": 5,
+        "flow": 540,
+        "speed_kmh": 29.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.199655,
+          44.955228
+        ]
+      },
+      "properties": {
+        "lcd1": 4856,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 1039,
+        "direction": "negative",
+        "accuracy": 98,
+        "period_min": 5,
+        "flow": 672,
+        "speed_kmh": 28.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.06817,
+          45.13287
+        ]
+      },
+      "properties": {
+        "lcd1": 4878,
+        "road_id": 336,
+        "road_name": "SS24 Del Monginevro",
+        "offset": 1640,
+        "direction": "negative",
+        "accuracy": 98,
+        "period_min": 5,
+        "flow": 252,
+        "speed_kmh": 69.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.06817,
+          45.13287
+        ]
+      },
+      "properties": {
+        "lcd1": 4877,
+        "road_id": 336,
+        "road_name": "SS24 Del Monginevro",
+        "offset": 8580,
+        "direction": "positive",
+        "accuracy": 97,
+        "period_min": 5,
+        "flow": 180,
+        "speed_kmh": 78.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3731,
+          44.88563
+        ]
+      },
+      "properties": {
+        "lcd1": 4849,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 2526,
+        "direction": "positive",
+        "accuracy": 49,
+        "period_min": 5,
+        "flow": 108,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.3731,
+          44.88563
+        ]
+      },
+      "properties": {
+        "lcd1": 4851,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 1331,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.313917,
+          44.879017
+        ]
+      },
+      "properties": {
+        "lcd1": 4851,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 3468,
+        "direction": "positive",
+        "accuracy": 73,
+        "period_min": 5,
+        "flow": 600,
+        "speed_kmh": 63.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.313917,
+          44.879017
+        ]
+      },
+      "properties": {
+        "lcd1": 4852,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 24,
+        "direction": "negative",
+        "accuracy": 97,
+        "period_min": 5,
+        "flow": 552,
+        "speed_kmh": 77.16
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.35245,
+          44.8424
+        ]
+      },
+      "properties": {
+        "lcd1": 12469,
+        "road_id": 1016,
+        "road_name": "SS589 Dei Laghi Di Avigliana",
+        "offset": 6172,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.35245,
+          44.8424
+        ]
+      },
+      "properties": {
+        "lcd1": 12468,
+        "road_id": 1016,
+        "road_name": "SS589 Dei Laghi Di Avigliana",
+        "offset": 1607,
+        "direction": "positive",
+        "accuracy": 98,
+        "period_min": 5,
+        "flow": 396,
+        "speed_kmh": 53.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.50445,
+          45.10467
+        ]
+      },
+      "properties": {
+        "lcd1": 4871,
+        "road_id": 336,
+        "road_name": "SS24 Del Monginevro",
+        "offset": 1571,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.50445,
+          45.10467
+        ]
+      },
+      "properties": {
+        "lcd1": 4872,
+        "road_id": 336,
+        "road_name": "SS24 Del Monginevro",
+        "offset": 6025,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.70955,
+          45.1566
+        ]
+      },
+      "properties": {
+        "lcd1": 35880,
+        "road_id": 35878,
+        "road_name": "SP267(TO) di Lombardore",
+        "offset": 1091,
+        "direction": "positive",
+        "accuracy": 96,
+        "period_min": 5,
+        "flow": 60,
+        "speed_kmh": 48.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.70955,
+          45.1566
+        ]
+      },
+      "properties": {
+        "lcd1": 35881,
+        "road_id": 35878,
+        "road_name": "SP267(TO) di Lombardore",
+        "offset": 571,
+        "direction": "negative",
+        "accuracy": 89,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.21835,
+          45.119067
+        ]
+      },
+      "properties": {
+        "lcd1": 4876,
+        "road_id": 336,
+        "road_name": "SS24 Del Monginevro",
+        "offset": 1563,
+        "direction": "positive",
+        "accuracy": 93,
+        "period_min": 5,
+        "flow": 24,
+        "speed_kmh": 63.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.21835,
+          45.119017
+        ]
+      },
+      "properties": {
+        "lcd1": 4877,
+        "road_id": 336,
+        "road_name": "SS24 Del Monginevro",
+        "offset": 3339,
+        "direction": "negative",
+        "accuracy": 92,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.65605,
+          45.138117
+        ]
+      },
+      "properties": {
+        "lcd1": 35818,
+        "road_id": 35815,
+        "road_name": "SP2(TO) di Germagnano",
+        "offset": 495,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.65605,
+          45.138117
+        ]
+      },
+      "properties": {
+        "lcd1": 35819,
+        "road_id": 35815,
+        "road_name": "SP2(TO) di Germagnano",
+        "offset": 1841,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.578017,
+          45.028517
+        ]
+      },
+      "properties": {
+        "lcd1": 35772,
+        "road_id": 35769,
+        "road_name": "SP174(TO) di Borgaretto",
+        "offset": 971,
+        "direction": "negative",
+        "accuracy": 98,
+        "period_min": 5,
+        "flow": 456,
+        "speed_kmh": 50.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.578017,
+          45.028517
+        ]
+      },
+      "properties": {
+        "lcd1": 35771,
+        "road_id": 35769,
+        "road_name": "SP174(TO) di Borgaretto",
+        "offset": 2073,
+        "direction": "positive",
+        "accuracy": 98,
+        "period_min": 5,
+        "flow": 348,
+        "speed_kmh": 59.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.56515,
+          44.9601
+        ]
+      },
+      "properties": {
+        "lcd1": 4845,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 840,
+        "direction": "positive",
+        "accuracy": 98,
+        "period_min": 5,
+        "flow": 372,
+        "speed_kmh": 56.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.56515,
+          44.9601
+        ]
+      },
+      "properties": {
+        "lcd1": 4846,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 3905,
+        "direction": "negative",
+        "accuracy": 98,
+        "period_min": 5,
+        "flow": 240,
+        "speed_kmh": 66.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.318,
+          44.8501
+        ]
+      },
+      "properties": {
+        "lcd1": 35716,
+        "road_id": 35714,
+        "road_name": "SP161(TO) della Val Pellice",
+        "offset": 951,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.318,
+          44.8501
+        ]
+      },
+      "properties": {
+        "lcd1": 35718,
+        "road_id": 35714,
+        "road_name": "SP161(TO) della Val Pellice",
+        "offset": 2173,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.626792,
+          45.095814
+        ]
+      },
+      "properties": {
+        "lcd1": 40121,
+        "road_id": 40118,
+        "road_name": "Corso Regina Margherita(TO)",
+        "offset": 340,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.632615,
+          45.093623
+        ]
+      },
+      "properties": {
+        "lcd1": 40123,
+        "road_id": 40118,
+        "road_name": "Corso Regina Margherita(TO)",
+        "offset": 1653,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.04635,
+          45.0386
+        ]
+      },
+      "properties": {
+        "lcd1": 4862,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 295,
+        "direction": "positive",
+        "accuracy": 96,
+        "period_min": 5,
+        "flow": 60,
+        "speed_kmh": 64.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.04635,
+          45.0386
+        ]
+      },
+      "properties": {
+        "lcd1": 4863,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 3791,
+        "direction": "negative",
+        "accuracy": 96,
+        "period_min": 5,
+        "flow": 48,
+        "speed_kmh": 67.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.868717,
+          44.9542
+        ]
+      },
+      "properties": {
+        "lcd1": 4866,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 919,
+        "direction": "positive",
+        "accuracy": 97,
+        "period_min": 5,
+        "flow": 84,
+        "speed_kmh": 44.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.868717,
+          44.9542
+        ]
+      },
+      "properties": {
+        "lcd1": 4867,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 5904,
+        "direction": "negative",
+        "accuracy": 97,
+        "period_min": 5,
+        "flow": 84,
+        "speed_kmh": 52.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.88395,
+          44.96192
+        ]
+      },
+      "properties": {
+        "lcd1": 4864,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 7793,
+        "direction": "positive",
+        "accuracy": 89,
+        "period_min": 5,
+        "flow": 12,
+        "speed_kmh": 85.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.88395,
+          44.96192
+        ]
+      },
+      "properties": {
+        "lcd1": 4865,
+        "road_id": 335,
+        "road_name": "SS23 Del Colle Di Sestriere",
+        "offset": 329,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.625643,
+          45.096231
+        ]
+      },
+      "properties": {
+        "lcd1": 40121,
+        "road_id": 40118,
+        "road_name": "Corso Regina Margherita(TO)",
+        "offset": 239,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.63375,
+          45.093256
+        ]
+      },
+      "properties": {
+        "lcd1": 40123,
+        "road_id": 40118,
+        "road_name": "Corso Regina Margherita(TO)",
+        "offset": 1555,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6225,
+          45.0507
+        ]
+      },
+      "properties": {
+        "lcd1": 39983,
+        "road_id": 39980,
+        "road_name": "Corso Allamano(TO)",
+        "offset": 563,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 444,
+        "speed_kmh": 30.14
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.680685,
+          45.035647
+        ]
+      },
+      "properties": {
+        "lcd1": 40071,
+        "road_id": 40070,
+        "road_name": "Corso Moncalieri(TO)",
+        "offset": 1836,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.725984,
+          45.103604
+        ]
+      },
+      "properties": {
+        "lcd1": 40253,
+        "road_id": 40251,
+        "road_name": "Strada Di Settimo(TO)",
+        "offset": 511,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 528,
+        "speed_kmh": 46.36
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67169,
+          45.07234
+        ]
+      },
+      "properties": {
+        "lcd1": 40266,
+        "road_id": 40265,
+        "road_name": "Via Cernaia(TO)",
+        "offset": 321,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67174,
+          45.07238
+        ]
+      },
+      "properties": {
+        "lcd1": 40266,
+        "road_id": 40265,
+        "road_name": "Via Cernaia(TO)",
+        "offset": 322,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.70806,
+          45.11394
+        ]
+      },
+      "properties": {
+        "lcd1": 40040,
+        "road_id": 40039,
+        "road_name": "Corso Giulio Cesare(TO)",
+        "offset": 639,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 1284,
+        "speed_kmh": 53.21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.696277,
+          45.10529
+        ]
+      },
+      "properties": {
+        "lcd1": 40194,
+        "road_id": 40192,
+        "road_name": "Corso Vercelli(TO)",
+        "offset": 1537,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 756,
+        "speed_kmh": 31.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.647085,
+          45.08876
+        ]
+      },
+      "properties": {
+        "lcd1": 40122,
+        "road_id": 40118,
+        "road_name": "Corso Regina Margherita(TO)",
+        "offset": 1267,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 864,
+        "speed_kmh": 39.89
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.653109,
+          45.086797
+        ]
+      },
+      "properties": {
+        "lcd1": 40123,
+        "road_id": 40118,
+        "road_name": "Corso Regina Margherita(TO)",
+        "offset": 125,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 636,
+        "speed_kmh": 39.52
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.615753,
+          45.074371
+        ]
+      },
+      "properties": {
+        "lcd1": 40022,
+        "road_id": 40017,
+        "road_name": "Corso Francia(TO)",
+        "offset": 96,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 1164,
+        "speed_kmh": 44.04
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.632419,
+          45.049447
+        ]
+      },
+      "properties": {
+        "lcd1": 40149,
+        "road_id": 40148,
+        "road_name": "Corso Sebastopoli(TO)",
+        "offset": 237,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 540,
+        "speed_kmh": 26.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.626645,
+          45.036389
+        ]
+      },
+      "properties": {
+        "lcd1": 40097,
+        "road_id": 40093,
+        "road_name": "Corso Orbassano(TO)",
+        "offset": 159,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 1404,
+        "speed_kmh": 32.43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.630939,
+          45.038504
+        ]
+      },
+      "properties": {
+        "lcd1": 40098,
+        "road_id": 40093,
+        "road_name": "Corso Orbassano(TO)",
+        "offset": 155,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 912,
+        "speed_kmh": 36.76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.669274,
+          45.014188
+        ]
+      },
+      "properties": {
+        "lcd1": 40174,
+        "road_id": 40172,
+        "road_name": "Corso Trieste(TO)",
+        "offset": 663,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 2136,
+        "speed_kmh": 45.55
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.66932,
+          45.01876
+        ]
+      },
+      "properties": {
+        "lcd1": 40189,
+        "road_id": 40188,
+        "road_name": "Corso Unita' D'italia(TO)",
+        "offset": 160,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 1812,
+        "speed_kmh": 47.94
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.642453,
+          45.033788
+        ]
+      },
+      "properties": {
+        "lcd1": 39977,
+        "road_id": 39975,
+        "road_name": "Corso Agnelli(TO)",
+        "offset": 417,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 816,
+        "speed_kmh": 46.64
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.701279,
+          45.103963
+        ]
+      },
+      "properties": {
+        "lcd1": 40041,
+        "road_id": 40039,
+        "road_name": "Corso Giulio Cesare(TO)",
+        "offset": 1001,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 840,
+        "speed_kmh": 52.04
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.71906,
+          45.096529
+        ]
+      },
+      "properties": {
+        "lcd1": 40212,
+        "road_id": 40211,
+        "road_name": "Ponte Amedeo VIII(TO)",
+        "offset": 410,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 948,
+        "speed_kmh": 29.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.612636,
+          45.074194
+        ]
+      },
+      "properties": {
+        "lcd1": 40021,
+        "road_id": 40017,
+        "road_name": "Corso Francia(TO)",
+        "offset": 513,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 1224,
+        "speed_kmh": 44.38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.672207,
+          45.067535
+        ]
+      },
+      "properties": {
+        "lcd1": 40034,
+        "road_id": 40029,
+        "road_name": "Corso Galileo Ferraris(TO)",
+        "offset": 238,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 600,
+        "speed_kmh": 38.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.634876,
+          45.022222
+        ]
+      },
+      "properties": {
+        "lcd1": 40182,
+        "road_id": 40180,
+        "road_name": "Corso Unione Sovietica(TO)",
+        "offset": 1261,
+        "direction": "positive",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 552,
+        "speed_kmh": 35.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.612029,
+          45.031137
+        ]
+      },
+      "properties": {
+        "lcd1": 40095,
+        "road_id": 40093,
+        "road_name": "Corso Orbassano(TO)",
+        "offset": 506,
+        "direction": "positive",
+        "accuracy": 94,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.694854,
+          45.108011
+        ]
+      },
+      "properties": {
+        "lcd1": 2375,
+        "road_id": 223,
+        "road_name": "R24 Raccordo Torino-Aeroporto Caselle",
+        "offset": 2066,
+        "direction": "negative",
+        "accuracy": 95,
+        "period_min": 5,
+        "flow": 1224,
+        "speed_kmh": 72.61
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.671445,
+          45.025896
+        ]
+      },
+      "properties": {
+        "lcd1": 40191,
+        "road_id": 40188,
+        "road_name": "Corso Unita' D'italia(TO)",
+        "offset": 1200,
+        "direction": "negative",
+        "accuracy": 80,
+        "period_min": 5,
+        "flow": 1572,
+        "speed_kmh": 55.82
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.671667,
+          45.02586
+        ]
+      },
+      "properties": {
+        "lcd1": 40189,
+        "road_id": 40188,
+        "road_name": "Corso Unita' D'italia(TO)",
+        "offset": 970,
+        "direction": "positive",
+        "accuracy": 80,
+        "period_min": 5,
+        "flow": 1488,
+        "speed_kmh": 58.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5656,
+          44.92167
+        ]
+      },
+      "properties": {
+        "lcd1": 3728,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 1580,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 384,
+        "speed_kmh": 57.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.565183,
+          44.921633
+        ]
+      },
+      "properties": {
+        "lcd1": 3727,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 5130,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 324,
+        "speed_kmh": 62.03
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.89524,
+          44.92541
+        ]
+      },
+      "properties": {
+        "lcd1": 3736,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 5160,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 276,
+        "speed_kmh": 70.76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.89524,
+          44.92541
+        ]
+      },
+      "properties": {
+        "lcd1": 3737,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 3550,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 300,
+        "speed_kmh": 69.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5672,
+          44.86458
+        ]
+      },
+      "properties": {
+        "lcd1": 5057,
+        "road_id": 346,
+        "road_name": "SS30 Di Val Bormida",
+        "offset": 7690,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 516,
+        "speed_kmh": 73.62
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5672,
+          44.86458
+        ]
+      },
+      "properties": {
+        "lcd1": 5058,
+        "road_id": 346,
+        "road_name": "SS30 Di Val Bormida",
+        "offset": 130,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 684,
+        "speed_kmh": 67.89
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.58575,
+          44.92719
+        ]
+      },
+      "properties": {
+        "lcd1": 5080,
+        "road_id": 347,
+        "road_name": "SS31 Del Monferrato",
+        "offset": 1010,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 456,
+        "speed_kmh": 51.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.58575,
+          44.92719
+        ]
+      },
+      "properties": {
+        "lcd1": 5081,
+        "road_id": 347,
+        "road_name": "SS31 Del Monferrato",
+        "offset": 480,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.79817,
+          44.77595
+        ]
+      },
+      "properties": {
+        "lcd1": 3234,
+        "road_id": 354,
+        "road_name": "SS35 Bis Dei Giovi",
+        "offset": 3100,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 348,
+        "speed_kmh": 65.26
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.79817,
+          44.77595
+        ]
+      },
+      "properties": {
+        "lcd1": 5235,
+        "road_id": 355,
+        "road_name": "SS35 Bis Dei Giovi",
+        "offset": 1460,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 372,
+        "speed_kmh": 68.69
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.63915,
+          44.99752
+        ]
+      },
+      "properties": {
+        "lcd1": 11787,
+        "road_id": 923,
+        "road_name": "SS494 Vigevanese",
+        "offset": 2920,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 492,
+        "speed_kmh": 54.55
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.63915,
+          44.99752
+        ]
+      },
+      "properties": {
+        "lcd1": 11788,
+        "road_id": 923,
+        "road_name": "SS494 Vigevanese",
+        "offset": 10400,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 360,
+        "speed_kmh": 54.97
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.66746,
+          44.673
+        ]
+      },
+      "properties": {
+        "lcd1": 14790,
+        "road_id": 14787,
+        "road_name": "SP155(AL)",
+        "offset": 2300,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 324,
+        "speed_kmh": 56.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.66746,
+          44.673
+        ]
+      },
+      "properties": {
+        "lcd1": 14789,
+        "road_id": 14787,
+        "road_name": "SP155(AL)",
+        "offset": 530,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 96,
+        "speed_kmh": 19.08
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.14151,
+          44.95677
+        ]
+      },
+      "properties": {
+        "lcd1": 11420,
+        "road_id": 885,
+        "road_name": "SS458 Di Casalborgone",
+        "offset": 2180,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.14151,
+          44.95677
+        ]
+      },
+      "properties": {
+        "lcd1": 11421,
+        "road_id": 885,
+        "road_name": "SS458 Di Casalborgone",
+        "offset": 1060,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.28477,
+          45.06662
+        ]
+      },
+      "properties": {
+        "lcd1": 11404,
+        "road_id": 884,
+        "road_name": "SS457 Di Moncalvo",
+        "offset": 1750,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 156,
+        "speed_kmh": 80.28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.28477,
+          45.06662
+        ]
+      },
+      "properties": {
+        "lcd1": 11405,
+        "road_id": 884,
+        "road_name": "SS457 Di Moncalvo",
+        "offset": 3230,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 108,
+        "speed_kmh": 84.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.217,
+          44.82497
+        ]
+      },
+      "properties": {
+        "lcd1": 11369,
+        "road_id": 883,
+        "road_name": "SS456 Del Turchino",
+        "offset": 2570,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 372,
+        "speed_kmh": 62.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.217,
+          44.82497
+        ]
+      },
+      "properties": {
+        "lcd1": 11370,
+        "road_id": 883,
+        "road_name": "SS456 Del Turchino",
+        "offset": 740,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 420,
+        "speed_kmh": 65.59
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.93916,
+          44.93965
+        ]
+      },
+      "properties": {
+        "lcd1": 3717,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 660,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 384,
+        "speed_kmh": 57.57
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.93916,
+          44.93965
+        ]
+      },
+      "properties": {
+        "lcd1": 3718,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 8570,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 432,
+        "speed_kmh": 51.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.25216,
+          45.57417
+        ]
+      },
+      "properties": {
+        "lcd1": 7925,
+        "road_id": 525,
+        "road_name": "SS142 Biellese",
+        "offset": 2500,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 348,
+        "speed_kmh": 58.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.25216,
+          45.57417
+        ]
+      },
+      "properties": {
+        "lcd1": 7926,
+        "road_id": 525,
+        "road_name": "SS142 Biellese",
+        "offset": 4300,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 612,
+        "speed_kmh": 58.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1073,
+          45.45714
+        ]
+      },
+      "properties": {
+        "lcd1": 7942,
+        "road_id": 526,
+        "road_name": "SS143 Vercellese",
+        "offset": 1540,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 456,
+        "speed_kmh": 65.08
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1073,
+          45.45714
+        ]
+      },
+      "properties": {
+        "lcd1": 7943,
+        "road_id": 526,
+        "road_name": "SS143 Vercellese",
+        "offset": 1390,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 372,
+        "speed_kmh": 72.93
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.77654,
+          44.40704
+        ]
+      },
+      "properties": {
+        "lcd1": 12292,
+        "road_id": 989,
+        "road_name": "SS564 Monregalese",
+        "offset": 4820,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 360,
+        "speed_kmh": 70.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.77654,
+          44.40704
+        ]
+      },
+      "properties": {
+        "lcd1": 12291,
+        "road_id": 990,
+        "road_name": "SS564 Monregalese",
+        "offset": 2090,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 396,
+        "speed_kmh": 56.52
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7627,
+          44.81005
+        ]
+      },
+      "properties": {
+        "lcd1": 13065,
+        "road_id": 1096,
+        "road_name": "SS661 Delle Langhe",
+        "offset": 1250,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 276,
+        "speed_kmh": 59.45
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7627,
+          44.81005
+        ]
+      },
+      "properties": {
+        "lcd1": 13066,
+        "road_id": 1096,
+        "road_name": "SS661 Delle Langhe",
+        "offset": 4680,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 132,
+        "speed_kmh": 79.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.59853,
+          44.64808
+        ]
+      },
+      "properties": {
+        "lcd1": 13077,
+        "road_id": 1097,
+        "road_name": "SS662 Di Savigliano",
+        "offset": 4960,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 384,
+        "speed_kmh": 52.15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.59853,
+          44.64808
+        ]
+      },
+      "properties": {
+        "lcd1": 13078,
+        "road_id": 1097,
+        "road_name": "SS662 Di Savigliano",
+        "offset": 8200,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 216,
+        "speed_kmh": 64.84
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.04099,
+          44.67126
+        ]
+      },
+      "properties": {
+        "lcd1": 5034,
+        "road_id": 344,
+        "road_name": "SS29 Del Colle Di Cadibona",
+        "offset": 4200,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 348,
+        "speed_kmh": 51.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.04099,
+          44.67126
+        ]
+      },
+      "properties": {
+        "lcd1": 5035,
+        "road_id": 344,
+        "road_name": "SS29 Del Colle Di Cadibona",
+        "offset": 2180,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 468,
+        "speed_kmh": 49.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.71134,
+          44.65592
+        ]
+      },
+      "properties": {
+        "lcd1": 13076,
+        "road_id": 1097,
+        "road_name": "SS662 Di Savigliano",
+        "offset": 2260,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 324,
+        "speed_kmh": 61.99
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.71134,
+          44.65592
+        ]
+      },
+      "properties": {
+        "lcd1": 13077,
+        "road_id": 1097,
+        "road_name": "SS662 Di Savigliano",
+        "offset": 5150,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 432,
+        "speed_kmh": 62.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0169,
+          44.21108
+        ]
+      },
+      "properties": {
+        "lcd1": 12394,
+        "road_id": 1008,
+        "road_name": "SS582 Del Colle Di S.Bernardo",
+        "offset": 870,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0169,
+          44.21108
+        ]
+      },
+      "properties": {
+        "lcd1": 12395,
+        "road_id": 1008,
+        "road_name": "SS582 Del Colle Di S.Bernardo",
+        "offset": 1640,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.53006,
+          44.39493
+        ]
+      },
+      "properties": {
+        "lcd1": 4832,
+        "road_id": 334,
+        "road_name": "SS22 Di Val Macra",
+        "offset": 740,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 336,
+        "speed_kmh": 54.11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.53006,
+          44.39493
+        ]
+      },
+      "properties": {
+        "lcd1": 4833,
+        "road_id": 334,
+        "road_name": "SS22 Di Val Macra",
+        "offset": 9050,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 372,
+        "speed_kmh": 49.06
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67659,
+          44.57956
+        ]
+      },
+      "properties": {
+        "lcd1": 4963,
+        "road_id": 341,
+        "road_name": "SS28 Del Colle Di Nava",
+        "offset": 1100,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 348,
+        "speed_kmh": 69.13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67659,
+          44.57956
+        ]
+      },
+      "properties": {
+        "lcd1": 4964,
+        "road_id": 341,
+        "road_name": "SS28 Del Colle Di Nava",
+        "offset": 4000,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 348,
+        "speed_kmh": 73.47
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.73117,
+          45.44373
+        ]
+      },
+      "properties": {
+        "lcd1": 27774,
+        "road_id": 27771,
+        "road_name": "SP4(NO) Ovest Ticino",
+        "offset": 2120,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.73117,
+          45.44373
+        ]
+      },
+      "properties": {
+        "lcd1": 27775,
+        "road_id": 27771,
+        "road_name": "SP4(NO) Ovest Ticino",
+        "offset": 2560,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.55355,
+          45.40573
+        ]
+      },
+      "properties": {
+        "lcd1": 3845,
+        "road_id": 297,
+        "road_name": "SS11 Padana Superiore",
+        "offset": 1720,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 336,
+        "speed_kmh": 68.22
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.55355,
+          45.40573
+        ]
+      },
+      "properties": {
+        "lcd1": 3846,
+        "road_id": 297,
+        "road_name": "SS11 Padana Superiore",
+        "offset": 4780,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 492,
+        "speed_kmh": 70.65
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.67443,
+          45.44016
+        ]
+      },
+      "properties": {
+        "lcd1": 13703,
+        "road_id": 297,
+        "road_name": "SS11 Padana Superiore",
+        "offset": 300,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.67443,
+          45.44016
+        ]
+      },
+      "properties": {
+        "lcd1": 3851,
+        "road_id": 297,
+        "road_name": "SS11 Padana Superiore",
+        "offset": 3280,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.66951,
+          45.59171
+        ]
+      },
+      "properties": {
+        "lcd1": 12070,
+        "road_id": 952,
+        "road_name": "SS527 Bustese",
+        "offset": 8700,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 336,
+        "speed_kmh": 52.21
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.66951,
+          45.59171
+        ]
+      },
+      "properties": {
+        "lcd1": 12071,
+        "road_id": 952,
+        "road_name": "SS527 Bustese",
+        "offset": 1160,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 288,
+        "speed_kmh": 52.83
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.36815,
+          45.66253
+        ]
+      },
+      "properties": {
+        "lcd1": 9752,
+        "road_id": 707,
+        "road_name": "SS299 Di Alagna",
+        "offset": 4400,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 300,
+        "speed_kmh": 71.38
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.36815,
+          45.66253
+        ]
+      },
+      "properties": {
+        "lcd1": 9753,
+        "road_id": 707,
+        "road_name": "SS299 Di Alagna",
+        "offset": 3970,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 408,
+        "speed_kmh": 72.28
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.50806,
+          45.73711
+        ]
+      },
+      "properties": {
+        "lcd1": 7934,
+        "road_id": 525,
+        "road_name": "SS142 Biellese",
+        "offset": 5550,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.50806,
+          45.73711
+        ]
+      },
+      "properties": {
+        "lcd1": 7935,
+        "road_id": 525,
+        "road_name": "SS142 Biellese",
+        "offset": 1720,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.59182,
+          45.12433
+        ]
+      },
+      "properties": {
+        "lcd1": 36066,
+        "road_id": 36065,
+        "road_name": "SP8(TO) di Druento",
+        "offset": 2980,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 660,
+        "speed_kmh": 55.88
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.59182,
+          45.12433
+        ]
+      },
+      "properties": {
+        "lcd1": 36067,
+        "road_id": 36065,
+        "road_name": "SP8(TO) di Druento",
+        "offset": 420,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 564,
+        "speed_kmh": 53.08
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.56886,
+          45.1878
+        ]
+      },
+      "properties": {
+        "lcd1": 35478,
+        "road_id": 35474,
+        "road_name": "SP1(TO) delle Valli di Lanzo",
+        "offset": 2600,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 252,
+        "speed_kmh": 66.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.56886,
+          45.1878
+        ]
+      },
+      "properties": {
+        "lcd1": 35479,
+        "road_id": 35474,
+        "road_name": "SP1(TO) delle Valli di Lanzo",
+        "offset": 970,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 432,
+        "speed_kmh": 52.56
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.61712,
+          45.20854
+        ]
+      },
+      "properties": {
+        "lcd1": 35823,
+        "road_id": 35815,
+        "road_name": "SP2(TO) Di Germagnano",
+        "offset": 2970,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 612,
+        "speed_kmh": 54.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.614418,
+          45.21232
+        ]
+      },
+      "properties": {
+        "lcd1": 35824,
+        "road_id": 35815,
+        "road_name": "SP2(TO) Di Germagnano",
+        "offset": 1060,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 684,
+        "speed_kmh": 51.89
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.76791,
+          44.93797
+        ]
+      },
+      "properties": {
+        "lcd1": 35518,
+        "road_id": 35516,
+        "road_name": "SP122(TO) di Chieri",
+        "offset": 3060,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 192,
+        "speed_kmh": 70.15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.76791,
+          44.93797
+        ]
+      },
+      "properties": {
+        "lcd1": 35519,
+        "road_id": 35516,
+        "road_name": "SP122(TO) di Chieri",
+        "offset": 900,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 252,
+        "speed_kmh": 83.43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.65615,
+          45.25525
+        ]
+      },
+      "properties": {
+        "lcd1": 35559,
+        "road_id": 35554,
+        "road_name": "SP13(TO) di Front",
+        "offset": 260,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 324,
+        "speed_kmh": 46.89
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.65615,
+          45.25525
+        ]
+      },
+      "properties": {
+        "lcd1": 35560,
+        "road_id": 35554,
+        "road_name": "SP13(TO) di Front",
+        "offset": 4070,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 204,
+        "speed_kmh": 37.02
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74296,
+          45.24431
+        ]
+      },
+      "properties": {
+        "lcd1": 11432,
+        "road_id": 887,
+        "road_name": "SS460 Di Ceresole",
+        "offset": 810,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 396,
+        "speed_kmh": 63.23
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.74296,
+          45.24431
+        ]
+      },
+      "properties": {
+        "lcd1": 11433,
+        "road_id": 887,
+        "road_name": "SS460 Di Ceresole",
+        "offset": 2400,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 348,
+        "speed_kmh": 66.86
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.69531,
+          45.35709
+        ]
+      },
+      "properties": {
+        "lcd1": 11436,
+        "road_id": 887,
+        "road_name": "SS460 Di Ceresole",
+        "offset": 400,
+        "direction": "positive",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.69531,
+          45.35709
+        ]
+      },
+      "properties": {
+        "lcd1": 11437,
+        "road_id": 887,
+        "road_name": "SS460 Di Ceresole",
+        "offset": 4230,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.73193,
+          45.37674
+        ]
+      },
+      "properties": {
+        "lcd1": 12297,
+        "road_id": 990,
+        "road_name": "SS565 Di Castellamonte",
+        "offset": 1170,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 432,
+        "speed_kmh": 71.97
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.73193,
+          45.37674
+        ]
+      },
+      "properties": {
+        "lcd1": 12298,
+        "road_id": 990,
+        "road_name": "SS565 Di Castellamonte",
+        "offset": 1430,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 276,
+        "speed_kmh": 79.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.425,
+          45.9131
+        ]
+      },
+      "properties": {
+        "lcd1": 8881,
+        "road_id": 627,
+        "road_name": "SS229 Del Lago D Orta",
+        "offset": 2300,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 780,
+        "speed_kmh": 53.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.425,
+          45.9131
+        ]
+      },
+      "properties": {
+        "lcd1": 8882,
+        "road_id": 627,
+        "road_name": "SS229 Del Lago D Orta",
+        "offset": 1800,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 480,
+        "speed_kmh": 55.07
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.47971,
+          45.93138
+        ]
+      },
+      "properties": {
+        "lcd1": 5154,
+        "road_id": 352,
+        "road_name": "SS33 Racc Del Sempione",
+        "offset": 250,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 468,
+        "speed_kmh": 50.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.47971,
+          45.93138
+        ]
+      },
+      "properties": {
+        "lcd1": 5155,
+        "road_id": 352,
+        "road_name": "SS33 Racc Del Sempione",
+        "offset": 1750,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 96,
+        "speed_kmh": 36.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3762,
+          45.37098
+        ]
+      },
+      "properties": {
+        "lcd1": 8890,
+        "road_id": 628,
+        "road_name": "SS230 Di Massazza",
+        "offset": 700,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 324,
+        "speed_kmh": 64.11
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3762,
+          45.37098
+        ]
+      },
+      "properties": {
+        "lcd1": 8891,
+        "road_id": 628,
+        "road_name": "SS230 Di Massazza",
+        "offset": 2300,
+        "direction": "negative",
+        "accuracy": 0,
+        "period_min": 5,
+        "flow": 0,
+        "speed_kmh": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.38372,
+          45.44371
+        ]
+      },
+      "properties": {
+        "lcd1": 12528,
+        "road_id": 1021,
+        "road_name": "SS594 Destra Sesia",
+        "offset": 2270,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 108,
+        "speed_kmh": 68.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.38372,
+          45.44371
+        ]
+      },
+      "properties": {
+        "lcd1": 12527,
+        "road_id": 1021,
+        "road_name": "SS594 Destra Sesia",
+        "offset": 1600,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 132,
+        "speed_kmh": 75.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.46357,
+          45.27307
+        ]
+      },
+      "properties": {
+        "lcd1": 5069,
+        "road_id": 347,
+        "road_name": "SS31 Del Monferrato",
+        "offset": 5700,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 312,
+        "speed_kmh": 64.44
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.46357,
+          45.27307
+        ]
+      },
+      "properties": {
+        "lcd1": 5070,
+        "road_id": 347,
+        "road_name": "SS31 Del Monferrato",
+        "offset": 3920,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 420,
+        "speed_kmh": 73.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.31339,
+          45.33262
+        ]
+      },
+      "properties": {
+        "lcd1": 3836,
+        "road_id": 297,
+        "road_name": "SS11 Padana Superiore",
+        "offset": 6010,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 228,
+        "speed_kmh": 58.76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.31339,
+          45.33262
+        ]
+      },
+      "properties": {
+        "lcd1": 3837,
+        "road_id": 297,
+        "road_name": "SS11 Padana Superiore",
+        "offset": 6000,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 192,
+        "speed_kmh": 65.72
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3324,
+          45.23535
+        ]
+      },
+      "properties": {
+        "lcd1": 11361,
+        "road_id": 882,
+        "road_name": "SS455 Di Pontestura",
+        "offset": 850,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 156,
+        "speed_kmh": 71.84
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3324,
+          45.23535
+        ]
+      },
+      "properties": {
+        "lcd1": 11362,
+        "road_id": 882,
+        "road_name": "SS455 Di Pontestura",
+        "offset": 3950,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 120,
+        "speed_kmh": 77.02
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.28771,
+          44.90394
+        ]
+      },
+      "properties": {
+        "lcd1": 3724,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 3500,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 168,
+        "speed_kmh": 63.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.28771,
+          44.90394
+        ]
+      },
+      "properties": {
+        "lcd1": 3725,
+        "road_id": 296,
+        "road_name": "SS10 Padana Inferiore",
+        "offset": 3090,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 372,
+        "speed_kmh": 55.97
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0091,
+          44.72294
+        ]
+      },
+      "properties": {
+        "lcd1": 5032,
+        "road_id": 344,
+        "road_name": "SS29 Del Colle Di Cadibona",
+        "offset": 590,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 540,
+        "speed_kmh": 44.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0091,
+          44.72294
+        ]
+      },
+      "properties": {
+        "lcd1": 5031,
+        "road_id": 344,
+        "road_name": "SS29 Del Colle Di Cadibona",
+        "offset": 670,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 732,
+        "speed_kmh": 47.95
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.48417,
+          44.53299
+        ]
+      },
+      "properties": {
+        "lcd1": 12473,
+        "road_id": 1016,
+        "road_name": "SS589 Dei Laghi Di Avigliana",
+        "offset": 3750,
+        "direction": "positive",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 240,
+        "speed_kmh": 70.15
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.48417,
+          44.53299
+        ]
+      },
+      "properties": {
+        "lcd1": 12474,
+        "road_id": 1016,
+        "road_name": "SS589 Dei Laghi Di Avigliana",
+        "offset": 2250,
+        "direction": "negative",
+        "accuracy": 100,
+        "period_min": 5,
+        "flow": 276,
+        "speed_kmh": 67.24
+      }
+    }
+  ]
+}

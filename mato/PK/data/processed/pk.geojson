@@ -1,0 +1,765 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.683574,
+          45.063553
+        ]
+      },
+      "properties": {
+        "id": 2,
+        "name": "Bodoni",
+        "total": 460,
+        "free": 198,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 56.95652173913044
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.667162,
+          45.072478
+        ]
+      },
+      "properties": {
+        "id": 3,
+        "name": "Bolzano",
+        "total": 858,
+        "free": 84,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 90.20979020979021
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.677542,
+          45.042894
+        ]
+      },
+      "properties": {
+        "id": 4,
+        "name": "D'Azeglio Galilei",
+        "total": 223,
+        "free": 44,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 80.26905829596413
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.68030909027,
+          45.076661393
+        ]
+      },
+      "properties": {
+        "id": 5,
+        "name": "Emanuele Filiberto",
+        "total": 110,
+        "free": 61,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 44.54545454545455
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.672192,
+          45.067451
+        ]
+      },
+      "properties": {
+        "id": 6,
+        "name": "Galileo Ferraris",
+        "total": 276,
+        "free": 28,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 89.85507246376811
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.662682,
+          45.031625
+        ]
+      },
+      "properties": {
+        "id": 7,
+        "name": "Lingotto",
+        "total": 3100,
+        "free": 2852,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 8.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.683419,
+          45.058585
+        ]
+      },
+      "properties": {
+        "id": 8,
+        "name": "Madama Cristina",
+        "total": 259,
+        "free": 138,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 46.71814671814672
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.668902,
+          45.040852
+        ]
+      },
+      "properties": {
+        "id": 9,
+        "name": "Nizza",
+        "total": 371,
+        "free": 190,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 48.78706199460917
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.661091,
+          45.069353
+        ]
+      },
+      "properties": {
+        "id": 10,
+        "name": "Palagiustizia",
+        "total": 616,
+        "free": 298,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 51.62337662337662
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.686467,
+          45.07646
+        ]
+      },
+      "properties": {
+        "id": 11,
+        "name": "Porta Palazzo",
+        "total": 653,
+        "free": 432,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 33.84379785604901
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.68372,
+          45.073845
+        ]
+      },
+      "properties": {
+        "id": 12,
+        "name": "Santo Stefano",
+        "total": 344,
+        "free": 35,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 89.82558139534883
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67583,
+          45.067
+        ]
+      },
+      "properties": {
+        "id": 13,
+        "name": "Re Umberto",
+        "total": 125,
+        "free": 3,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 97.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.680366,
+          45.063992
+        ]
+      },
+      "properties": {
+        "id": 14,
+        "name": "Roma S.Carlo Castello",
+        "total": 786,
+        "free": 122,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 84.47837150127226
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.672969,
+          45.033647
+        ]
+      },
+      "properties": {
+        "id": 15,
+        "name": "Ventimiglia",
+        "total": 303,
+        "free": 133,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 56.1056105610561
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.70501,
+          45.070346
+        ]
+      },
+      "properties": {
+        "id": 16,
+        "name": "Fontanesi",
+        "total": 358,
+        "free": 88,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 75.41899441340782
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.646689,
+          45.069825
+        ]
+      },
+      "properties": {
+        "id": 17,
+        "name": "Racconigi",
+        "total": 100,
+        "free": 0,
+        "status": 0,
+        "tendence": 1,
+        "occupancy_pct": 100.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.687613,
+          45.065041
+        ]
+      },
+      "properties": {
+        "id": 18,
+        "name": "Valdo Fusi",
+        "total": 457,
+        "free": 86,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 81.18161925601751
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.667003,
+          45.064056
+        ]
+      },
+      "properties": {
+        "id": 19,
+        "name": "Stati Uniti",
+        "total": 500,
+        "free": 181,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 63.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.640286,
+          45.028627
+        ]
+      },
+      "properties": {
+        "id": 23,
+        "name": "Caio Mario",
+        "total": 418,
+        "free": 409,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 2.15311004784689
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.591056,
+          45.076464
+        ]
+      },
+      "properties": {
+        "id": 24,
+        "name": "Fermi",
+        "total": 300,
+        "free": 0,
+        "status": 0,
+        "tendence": 1,
+        "occupancy_pct": 100.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.675885,
+          45.038575
+        ]
+      },
+      "properties": {
+        "id": 25,
+        "name": "Molinette",
+        "total": 481,
+        "free": 164,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 65.9043659043659
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.716923,
+          45.095568
+        ]
+      },
+      "properties": {
+        "id": 27,
+        "name": "Sofia",
+        "total": 272,
+        "free": 150,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 44.85294117647059
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.711557,
+          45.120578
+        ]
+      },
+      "properties": {
+        "id": 28,
+        "name": "Stura",
+        "total": 589,
+        "free": 469,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 20.37351443123939
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.695425,
+          45.064784
+        ]
+      },
+      "properties": {
+        "id": 30,
+        "name": "Vittorio",
+        "total": 476,
+        "free": 135,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 71.63865546218487
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.682977,
+          45.050827
+        ]
+      },
+      "properties": {
+        "id": 31,
+        "name": "V Padiglione",
+        "total": 327,
+        "free": 0,
+        "status": 0,
+        "tendence": 1,
+        "occupancy_pct": 100.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67349,
+          45.033603
+        ]
+      },
+      "properties": {
+        "id": 32,
+        "name": "Cto",
+        "total": 161,
+        "free": 102,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 36.64596273291925
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.62291,
+          45.01192
+        ]
+      },
+      "properties": {
+        "id": 40,
+        "name": "Unione Sovietica",
+        "total": 150,
+        "free": 0,
+        "status": 0,
+        "tendence": 1,
+        "occupancy_pct": 100.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.672489,
+          45.036604
+        ]
+      },
+      "properties": {
+        "id": 46,
+        "name": "Bacigalupo",
+        "total": 326,
+        "free": 184,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 43.558282208588956
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.65565,
+          45.06879
+        ]
+      },
+      "properties": {
+        "id": 47,
+        "name": "Bixio",
+        "total": 255,
+        "free": 148,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 41.96078431372549
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.615765,
+          45.074104
+        ]
+      },
+      "properties": {
+        "id": 48,
+        "name": "Venchi Unica",
+        "total": 437,
+        "free": 244,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 44.16475972540046
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.63973,
+          45.02803
+        ]
+      },
+      "properties": {
+        "id": 50,
+        "name": "Caio Mario Camper",
+        "total": 57,
+        "free": 50,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 12.280701754385966
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67776,
+          45.06293
+        ]
+      },
+      "properties": {
+        "id": 51,
+        "name": "Porta Nuova Fs",
+        "total": 242,
+        "free": 11,
+        "status": 1,
+        "tendence": -1,
+        "occupancy_pct": 95.45454545454545
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.66718,
+          45.07301
+        ]
+      },
+      "properties": {
+        "id": 52,
+        "name": "Porta Susa Fs",
+        "total": 123,
+        "free": 6,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 95.1219512195122
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.69175,
+          45.07961
+        ]
+      },
+      "properties": {
+        "id": 53,
+        "name": "Ancona",
+        "total": 148,
+        "free": 26,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 82.43243243243244
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67184,
+          45.07339
+        ]
+      },
+      "properties": {
+        "id": 54,
+        "name": "Palestro",
+        "total": 113,
+        "free": 6,
+        "status": 1,
+        "tendence": -1,
+        "occupancy_pct": 94.69026548672566
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.67348,
+          45.06936
+        ]
+      },
+      "properties": {
+        "id": 55,
+        "name": "Cernaia",
+        "total": 94,
+        "free": 16,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 82.97872340425532
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.68091,
+          45.04709
+        ]
+      },
+      "properties": {
+        "id": 56,
+        "name": "Monti",
+        "total": 153,
+        "free": 13,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 91.50326797385621
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.68379,
+          45.07768
+        ]
+      },
+      "properties": {
+        "id": 57,
+        "name": "Mercato Centrale",
+        "total": 110,
+        "free": 80,
+        "status": 1,
+        "tendence": -1,
+        "occupancy_pct": 27.272727272727273
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.65785,
+          45.08301
+        ]
+      },
+      "properties": {
+        "id": 59,
+        "name": "Richelmy",
+        "total": 115,
+        "free": 62,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 46.08695652173913
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.642471,
+          45.061756
+        ]
+      },
+      "properties": {
+        "id": 60,
+        "name": "Lancia",
+        "total": 323,
+        "free": 157,
+        "status": 1,
+        "tendence": 1,
+        "occupancy_pct": 51.39318885448916
+      }
+    }
+  ]
+}

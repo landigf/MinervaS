@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: ODHconnector
+Version: 0.1.0
+Summary: Ponte dati fra MinervaS e OpenDataHub (meteo & traffico)
+Author: Landi Gennaro Francesco, Palmisano Elettra
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests<3,>=2.32
+Requires-Dist: python-dotenv<2,>=1.0
+Requires-Dist: scikit-fuzzy<1,>=0.4
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinxcontrib-napoleon; extra == "docs"
+Requires-Dist: myst-parser; extra == "docs"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# MinervaS‑ODH Connector
+
+Skeleton project that bridges **MinervaS** (fleet guidance) with **OpenDataHub** weather & traffic APIs
+for the *A22 Trentino* road segment.
+
+> Generated on 2025-05-05
+
+## Quick start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install -e '.[docs,test]'
+pytest            # run sample tests
+cd docs && make html   # build HTML docs (needs Sphinx)
+```
+
