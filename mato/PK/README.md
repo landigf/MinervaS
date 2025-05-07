@@ -2,14 +2,17 @@
 
 ## Cos’è
 
-Posizione e stato di riempimento in **tempo reale** dei parcheggi coperti di Torino (dati open-data di 5T / Città di Torino, licenza IODL v2.0).
+Il dataset fornisce la posizione e (se disponibile) lo stato di riempimento in **tempo reale** dei parcheggi coperti di Torino, aperti 24h/24, basati su dati puntuali rilevati dal sistema 5T. 
 
 Per ogni parcheggio vengono forniti:
 
-* **Coordinate** geografiche WGS-84 dell’ingresso principale
-* **Capienza totale** (`Total`)
-* **Posti liberi** attuali (`Free`)
-* **Stato** (`status`: 1 = online, 0 = offline) e **tendenza** (`tendence`: -1 ↓, 0 →, 1 ↑)
+* Nome del parcheggio (`Name`)
+* Identificativo univoco del parcheggio nel sistema (`ID`)
+* Coordinate geografiche WGS-84 dell’ingresso principale
+* Capienza totale (`Total`)
+* Posti liberi attuali (assente se status = 0) (`Free`)
+* Stato (`status`: 1 = online, 0 = offline)
+* Tendenza di occupazione (`tendence`: -1 si sta svuotando, 0 rimane fisso, 1 si sta riempiendo)
 
 I valori sono aggiornati con granularità < 5 minuti.
 

@@ -2,13 +2,20 @@
 
 ## Cos’è
 
-Flussi di traffico misurati da **spire induttive** o **sensori aerei** installati sulla rete stradale torinese.
-Il file XML, aggiornato ogni 5 minuti, riporta per ciascuna sezione:
+Il dataset fornisce i flussi di traffico misurati da **spire induttive** o **sensori aerei** installati sulla rete stradale torinese.
+Il file XML riporta dati puntuali, provenienti dal sistema 5T, aggiornati ogni 5 minuti. 
 
-* coordinate geografiche (WGS‑84)
-* numero di veicoli (`flow`)
-* velocità media (`speed`, km/h)
-* direzione (+/–)
+Per ogni sezione vengono forniti:
+
+* ID del punto di misura (`lcd1`)
+* ID della strada nel sistema interno 5T (`Road_LCD`)
+* Nome della strada in cui è localizzato il sensore (`Road_name`)
+* Posizione del sensore dall'inizio della strada (`offset`, m)
+* Coordinate geografiche (WGS‑84)
+* Numero di veicoli (`flow`)
+* Velocità media (`speed`, km/h)
+* Direzione (`direction`, +/–)
+* Accuratezza (`accuracy`)
 
 I valori sono **indicativi** dello stato del traffico e non necessariamente corrispondono al conteggio esatto dei veicoli.
 

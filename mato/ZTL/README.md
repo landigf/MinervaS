@@ -2,13 +2,26 @@
 
 ## Cos’è
 
-Dataset open-data pubblicato da **Città di Torino / 5T** (licenza *IODL v2.0*). Contiene:
+Il dataset fornisce **informazioni statiche** e georeferenziate sulle **Zone a Traffico Limitato (ZTL)** della città di Torino, includendo perimetro, varchi di accesso, fasce orarie di validità ed eventuali restrizioni ambientali. 
 
-* **Perimetro della ZTL** (coordinate lat/lon WGS-84)
-* **Varchi di accesso** con posizione e orientamento telecamera
-* **Fasce di validità** (giorni/ore in cui la ZTL è attiva)
+Per ogni ZTL vengono forniti:
 
-Utile per visualizzare i confini, analizzare gli accessi e alimentare servizi di mobilità come **Minervas**.
+* ID numerico della ZTL (`ID`)
+* Nome della ZTL (`name`)
+* Perimetro della ZTL (<polyline> formata da più <point>, ognuno con coordinate lat/lon WGS-84)
+* Varchi di accesso alla ZTL: 
+    * ID univoco del varco (`ID`)
+    * Nome descrittivo (`name`)
+    * Tipo (`type`)
+    * Coordinate geografiche (`lat`, `lng`)
+    * Orientamento (angolo in gradi) che indica la direzione del varco (`heading`)
+* Fasce di validità (giorni/ore in cui la ZTL è attiva): 
+    * Intervallo orario di attivazione nei giorni feriali (`weekday`)
+    * Orario di inizio e di fine restrizione (`start_time`, `end_time`)
+* Regole di accesso alla ZTL
+* Restrizioni ambientali: 
+    * Tipo di classificazione ambientale (`env_type`)
+    * Tipo di carburante (`fuel_type`)
 
 ---
 
