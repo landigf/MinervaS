@@ -88,8 +88,6 @@
 <li><p><a class="reference internal" href="#environment-variables">Environment Variables</a></p></li>
 <li><p><a class="reference internal" href="#generating-the-documentation">Generating the Documentation</a></p></li>
 <li><p><a class="reference internal" href="#running-tests">Running Tests</a></p></li>
-<li><p><a class="reference internal" href="#contributing">Contributing</a></p></li>
-<li><p><a class="reference internal" href="#license">License</a></p></li>
 <li><p><a class="reference internal" href="#authors">Authors</a></p></li>
 <li><p><a class="reference internal" href="#last-update">Last Update</a></p></li>
 </ol>
@@ -115,7 +113,7 @@
 │   .env.example     # sample env vars
 │
 ├── src/
-│   └── minervas_odh_connector/  # package root
+│   └── odhconnector/  # package root
 │       ├── models.py
 │       ├── utils.py
 │       ├── connectors/
@@ -155,7 +153,7 @@ pytest
 </section>
 <section id="usage-example">
 <h2>Usage Example<a class="headerlink" href="#usage-example" title="Link to this heading"></a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">minervas_odh_connector.connectors.connector</span><span class="w"> </span><span class="kn">import</span> <span class="n">ODHConnector</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">odhconnector.connectors.connector</span><span class="w"> </span><span class="kn">import</span> <span class="n">ODHConnector</span>
 
 <span class="n">connector</span> <span class="o">=</span> <span class="n">ODHConnector</span><span class="p">(</span>
     <span class="n">odh_base_url</span><span class="o">=</span><span class="s2">&quot;https://mobility.api.opendatahub.com&quot;</span><span class="p">,</span>
@@ -175,8 +173,7 @@ pytest
 <section id="environment-variables">
 <h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Link to this heading"></a></h2>
 <p>Create a <code class="docutils literal notranslate"><span class="pre">.env</span></code> file (or export them in your shell):</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ODH_API_KEY</span><span class="o">=</span><span class="s2">&quot;&lt;YOUR_ODH_API_KEY&gt;&quot;</span>
-<span class="nv">ODH_BASE_URL</span><span class="o">=</span><span class="s2">&quot;https://mobility.api.opendatahub.com&quot;</span><span class="w">  </span><span class="c1"># override if needed</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">ODH_BASE_URL</span><span class="o">=</span><span class="s2">&quot;https://mobility.api.opendatahub.com&quot;</span><span class="w">  </span><span class="c1"># override if needed</span>
 </pre></div>
 </div>
 </section>
@@ -195,19 +192,6 @@ open<span class="w"> </span>_build/html/index.html
 pytest<span class="w"> </span>-q<span class="w">      </span><span class="c1"># -q for quiet output</span>
 </pre></div>
 </div>
-</section>
-<section id="contributing">
-<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading"></a></h2>
-<ol class="arabic simple">
-<li><p>Fork ➜ feature branch ➜ pull request.</p></li>
-<li><p>Follow the existing module layout (keep adapters / connectors small).</p></li>
-<li><p>Write or extend <strong>pytest</strong> tests; ensure <code class="docutils literal notranslate"><span class="pre">pytest</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code> are green.</p></li>
-<li><p>Keep docstrings in <strong>Google style</strong>.</p></li>
-</ol>
-</section>
-<section id="license">
-<h2>License<a class="headerlink" href="#license" title="Link to this heading"></a></h2>
-<p>This project is licensed under the <strong>MIT License</strong> – see the <code class="docutils literal notranslate"><span class="pre">LICENSE</span></code> file.</p>
 </section>
 <section id="authors">
 <h2>Authors<a class="headerlink" href="#authors" title="Link to this heading"></a></h2>

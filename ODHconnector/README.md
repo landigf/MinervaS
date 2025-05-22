@@ -16,10 +16,8 @@
 6. [Environment Variables](#environment-variables)
 7. [Generating the Documentation](#generating-the-documentation)
 8. [Running Tests](#running-tests)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [Authors](#authors)
-12. [Last Update](#last-update)
+9. [Authors](#authors)
+10. [Last Update](#last-update)
 
 ---
 
@@ -42,7 +40,7 @@ ODHconnector/
 │   .env.example     # sample env vars
 │
 ├── src/
-│   └── minervas_odh_connector/  # package root
+│   └── odhconnector/  # package root
 │       ├── models.py
 │       ├── utils.py
 │       ├── connectors/
@@ -80,7 +78,7 @@ cd docs && make html          # output in docs/_build/html/
 ## Usage Example
 
 ```python
-from minervas_odh_connector.connectors.connector import ODHConnector
+from odhconnector.connectors.connector import ODHConnector
 
 connector = ODHConnector(
     odh_base_url="https://mobility.api.opendatahub.com",
@@ -101,7 +99,6 @@ for inc in danger:
 Create a `.env` file (or export them in your shell):
 
 ```bash
-ODH_API_KEY="<YOUR_ODH_API_KEY>"
 ODH_BASE_URL="https://mobility.api.opendatahub.com"  # override if needed
 ```
 
@@ -120,17 +117,6 @@ open _build/html/index.html
 pip install -e '.[test]'
 pytest -q      # -q for quiet output
 ```
-
-## Contributing
-
-1. Fork ➜ feature branch ➜ pull request.
-2. Follow the existing module layout (keep adapters / connectors small).
-3. Write or extend **pytest** tests; ensure `pytest` & `make html` are green.
-4. Keep docstrings in **Google style**.
-
-## License
-
-This project is licensed under the **MIT License** – see the `LICENSE` file.
 
 ## Authors
 

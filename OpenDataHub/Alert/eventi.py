@@ -6,7 +6,6 @@ import os
 
 # Configuration
 API_URL = 'https://mobility.api.opendatahub.com/v2/flat%2Cevent/%2A'
-API_KEY = 'YOUR_API_KEY_HERE'  # Se serve
 
 headers = {
     'accept': 'application/json',

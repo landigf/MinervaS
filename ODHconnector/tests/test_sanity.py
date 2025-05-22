@@ -1,12 +1,12 @@
-"""Basic smoke test – ensures the package imports and core class instantiates."""
+# tests/test_sanity.py
 from odhconnector.connectors.connector import ODHConnector
 
 def test_connector_instantiation():
-    connector = ODHConnector(
-        odh_base_url="https://example.com",
-        odh_api_key="dummy",
+    conn = ODHConnector(
+        odh_base_url="https://mobility.api.opendatahub.com",
+        odh_api_key="",
         position_provider=lambda: (46.0, 11.0),
-        route_segment="A22_Trentino",
+        route_segment="A22",
         auto_refresh=False,
     )
-    assert connector.get_incidents() == []
+    assert conn.get_incidents() == []
