@@ -1,0 +1,72 @@
+# src/odhconnector/risk/config.yaml
+
+memberships:
+  traffic:
+    universe: [0.0, 1.0]    # valori min/max
+    functions:
+      low:    [0.0, 0.0, 0.3]
+      high:   [0.4, 1.0, 1.0]
+
+  weather:
+    universe: [0.0, 1.0]
+    functions:
+      good:   [0.0, 0.0, 0.4]
+      bad:    [0.6, 1.0, 1.0]
+
+  fatigue:
+    universe: [0.0, 1.0]
+    functions:
+      fresh:  [0.0, 0.0, 0.4]
+      tired:  [0.6, 1.0, 1.0]
+
+  deadline:
+    universe: [0.0, 1.0]
+    functions:
+      low:    [0.0, 0.0, 0.4]
+      high:   [0.6, 1.0, 1.0]
+
+  temp:
+    universe: [-20.0, 40.0]
+    functions:
+      very_cold: [-20, -20, 0]
+      cold:      [-10, 0, 10]
+      normal:    [5, 15, 25]
+      hot:       [20, 30, 40]
+      very_hot:  [35, 40, 40]
+
+  speed:
+    universe: [0.0, 1.0]
+    functions:
+      slow:    [0.0, 0.3, 0.6]
+      cruise:  [0.4, 0.7, 1.0]
+
+rules:
+  - if:  
+      traffic: high  
+      or:  
+        weather: bad  
+    then:  
+      speed: slow
+
+  - if:  
+      fatigue: tired  
+      and:  
+        deadline: low  
+    then:  
+      speed: slow
+
+  - if:  
+      deadline: high  
+      and:  
+        traffic: low  
+        and:  
+          weather: good  
+    then:  
+      speed: cruise
+
+  - if:  
+      temp: very_cold  
+      or:  
+        temp: very_hot  
+    then:  
+      speed: slow

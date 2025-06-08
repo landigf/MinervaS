@@ -13,6 +13,10 @@ src/odhconnector/adapters/traffic_adapter.py
 src/odhconnector/adapters/weather_adapter.py
 src/odhconnector/connectors/__init__.py
 src/odhconnector/connectors/connector.py
+src/odhconnector/risk/__init__.py
+src/odhconnector/risk/fuzzy_engine.py
+src/odhconnector/risk/membership.py
 tests/test_connector_features.py
+tests/test_fuzzy_engine.py
 tests/test_incidents_live.py
 tests/test_sanity.py

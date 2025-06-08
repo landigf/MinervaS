@@ -1,6 +1,9 @@
 requests<3,>=2.32
 python-dotenv<2,>=1.0
 scikit-fuzzy<1,>=0.4
+pyyaml<7,>=6.0
+networkx<4,>=3.0
+scipy<2,>=1.10
 
 [docs]
 sphinx

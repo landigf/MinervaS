@@ -347,7 +347,7 @@ class ODHConnector:
         verbose: bool = False,
     ) -> float:
         """
-        Calcola un punteggio [0–1] che rappresenta l’attenzione richiesta,
+        Calcola un punteggio [0-1] che rappresenta l'attenzione richiesta,
         pesando ogni alert per la sua rilevanza e gravità.
 
         Args:
@@ -396,3 +396,29 @@ class ODHConnector:
 
         score = num / den if den > 0 else 0.0
         return min(max(score, 0.0), 1.0)
+
+
+# ------------------------------------------------------------------ #
+# Integrazione con risk fuzzy_engine.py
+from ..risk.fuzzy_engine import predict_speed_factor
+
+def get_speed_factor(
+        self,
+        fatigue: float = 0.0,
+        deadline_pressure: float = 0.0,
+        within_km: float = 5,
+        last_n_hours: int | None = None,
+    ) -> float:
+        """Calcola lo speed_factor fuzzy combinando
+        traffico, meteo e parametri di guida."""
+        # ricavo rischi normalizzati
+        traffic_risk = self.compute_attention_score(within_km, last_n_hours)
+        wx = self._cache.get("weather")
+        weather_risk = max(wx.rain_intensity or 0, 1 - (wx.visibility or 1)) if wx else 0.0
+        # temperatura in °C da adapter (ne serve modifica per salvarla raw)
+        temp_c = wx.temperature_c if wx else 15.0
+
+        # predizione fuzzy
+        return predict_speed_factor(
+            traffic_risk, weather_risk, fatigue, deadline_pressure, temp_c
+        )
