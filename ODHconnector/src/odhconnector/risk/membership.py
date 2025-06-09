@@ -6,14 +6,14 @@ import numpy as np
 import skfuzzy as fuzz
 
 def create_memberships():
-    # Traffic risk: valori normalizzati 0–1
+    # Traffic risk: valori normalizzati 0-1
     traffic = np.linspace(0, 1, 101)
     mf_traffic = {
         'low':  fuzz.trimf(traffic, [0, 0, 0.3]),
         'high': fuzz.trimf(traffic, [0.4, 1, 1]),
     }
 
-    # Weather risk: già normalizzato 0–1 (intensità pioggia, visibilità)
+    # Weather risk: già normalizzato 0-1 (intensità pioggia, visibilità)
     weather = np.linspace(0, 1, 101)
     mf_weather = {
         'good': fuzz.trimf(weather, [0, 0, 0.4]),

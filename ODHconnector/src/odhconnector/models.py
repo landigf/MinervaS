@@ -15,7 +15,7 @@ class Event:
 
 @dataclass
 class Incident(Event):
-    severity: Optional[int] = None  # 0–5 scale
+    severity: Optional[int] = None  # 0-5 scale
 
 @dataclass
 class WorkZone(Event):
@@ -23,7 +23,7 @@ class WorkZone(Event):
 
 @dataclass
 class WeatherIndex:
-    """Normalized weather data (0–1)."""
+    """Normalized weather data (0-1)."""
     rain_intensity: float
     visibility: float
     temperature_c: float
@@ -33,5 +33,5 @@ class WeatherIndex:
 class Alert:
     """Fuzzy‑logic advisory returned to MinervaS."""
     message: str
-    suggested_speed_factor: float  # 0–1 multiplier w.r.t. limit
-    relevance: float               # confidence 0–1
+    suggested_speed_factor: float  # 0-1 multiplier w.r.t. limit
+    relevance: float               # confidence 0-1

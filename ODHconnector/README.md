@@ -61,17 +61,17 @@ ODHconnector/
 ## Quick Start
 
 ```bash
-# 1 – create & activate a virtual environment
+# 1 - create & activate a virtual environment
 python -m venv .venv
 source .venv/bin/activate    # Windows: .venv\Scripts\activate
 
-# 2 – install the package in editable mode + docs & test extras
+# 2 - install the package in editable mode + docs & test extras
 pip install -e '.[docs,test]'
 
-# 3 – run the smoke tests (should pass)
+# 3 - run the smoke tests (should pass)
 pytest
 
-# 4 – build HTML documentation
+# 4 - build HTML documentation
 cd docs && make html          # output in docs/_build/html/
 ```
 
@@ -120,8 +120,8 @@ pytest -q      # -q for quiet output
 
 ## Authors
 
-* **Landi Gennaro Francesco** – [gennaro.landi@minervas.it](mailto:gennaro.landi@minervas.it)
-* **Palmisano Elettra** – [elettra.palmisano@minervas.it](mailto:elettra.palmisano@minervas.it)
+* **Landi Gennaro Francesco** - [gennaro.landi@minervas.it](mailto:gennaro.landi@minervas.it)
+* **Palmisano Elettra** - [elettra.palmisano@minervas.it](mailto:elettra.palmisano@minervas.it)
 
 ## Last Update
 

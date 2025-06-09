@@ -1,4 +1,4 @@
-# Dataset “Parcheggi in struttura (tempo reale)” – Torino
+# Dataset “Parcheggi in struttura (tempo reale)” - Torino
 
 ## Cos’è
 
@@ -30,7 +30,7 @@ python convert_pk.py map    # scarica → converte → crea web-demo/pk_map.html
 
 ---
 
-## convert\_pk.py – Toolkit
+## convert\_pk.py - Toolkit
 
 ```
 1. Scarica l’XML in tempo reale              →  python convert_pk.py download
@@ -57,7 +57,7 @@ PK
 ## License & attribution
 
 Dataset sotto **IODL v2.0**. Ogni redistribuzione **deve** citare
-“Città di Torino – dataset *Occupazione parcheggi in struttura*”.
+“Città di Torino - dataset *Occupazione parcheggi in struttura*”.
 Map tiles © OpenStreetMap contributors (*ODbL*).
 
 ---

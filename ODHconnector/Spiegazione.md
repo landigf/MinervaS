@@ -40,7 +40,7 @@ MinervaS ──► ODHConnector  ──►  WeatherAdapter  ─────►  
 | Import & istanziazione (`test_sanity`) | pacchetto installabile/editable             | ✅ già verde |
 | `refresh_data()` with dummy adapters   | aggiorna cache senza errori                 | ☐ da fare   |
 | Filtri distanza su `get_incidents()`   | haversine + within\_km                      | ☐ da fare   |
-| Normalizzazione meteo                  | `WeatherAdapter.fetch_weather` → valori 0–1 | ☐           |
+| Normalizzazione meteo                  | `WeatherAdapter.fetch_weather` → valori 0-1 | ☐           |
 | Generazione alert basica               | ritorna empty list ma senza crash           | ☐           |
 
 *(Aggiungeremo test integrazione real‐API quando registriamo l’API key in CI.)*

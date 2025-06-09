@@ -53,9 +53,9 @@ Below are the 15 weather parameters included in the **free basic package**, cali
 | `precip_1h:mm`              | Precipitation in the past hour                               | mm                        |
 | `precip_24h:mm`             | Precipitation in the past 24 hours                           | mm                        |
 | `msl_pressure:hPa`          | Mean sea level pressure                                      | hPa / Pa                  |
-| `weather_symbol_1h:idx`     | Weather summary symbol for the past hour                     | index (0–99)              |
-| `weather_symbol_24h:idx`    | Weather summary symbol for the past 24 hours                 | index (0–99)              |
-| `uv:idx`                    | Ultraviolet radiation index                                  | index (0–11+)             |
+| `weather_symbol_1h:idx`     | Weather summary symbol for the past hour                     | index (0-99)              |
+| `weather_symbol_24h:idx`    | Weather summary symbol for the past 24 hours                 | index (0-99)              |
+| `uv:idx`                    | Ultraviolet radiation index                                  | index (0-11+)             |
 | `sunrise:sql`               | Sunrise time                                                 | SQL-like time (HH:MM)     |
 | `sunset:sql`                | Sunset time                                                  | SQL-like time (HH:MM)     |
 

@@ -1,4 +1,4 @@
-# Dataset “Perimetro e Orari ZTL” – Torino
+# Dataset “Perimetro e Orari ZTL” - Torino
 
 ## Cos’è
 
@@ -37,7 +37,7 @@ Il comando `map` esegue automaticamente anche `download` e `geojson` se i file n
 
 ---
 
-## convert\_ztl.py – Toolkit
+## convert\_ztl.py - Toolkit
 
 ```
 1. Scarica l’XML dal portale 5T          →  python convert_ztl.py download
@@ -64,7 +64,7 @@ Il comando `map` esegue automaticamente anche `download` e `geojson` se i file n
 ## License & attribution
 
 Il dataset è rilasciato sotto **IODL v2.0**. Ogni redistribuzione **deve** citare
-“Città di Torino – dataset *Perimetro ed orari ZTL*”.
+“Città di Torino - dataset *Perimetro ed orari ZTL*”.
 Map tiles © OpenStreetMap contributors (*ODbL*).
 
 ---

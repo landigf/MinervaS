@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-convert_ztl.py – Toolkit per il dataset "Perimetro e orari ZTL" di Torino
+convert_ztl.py - Toolkit per il dataset "Perimetro e orari ZTL" di Torino
 ----------------------------------------------------------------------------
 Funzionalità principali:
   1. Scarica l'XML dal servizio open‑data 5T (comando `download`)
