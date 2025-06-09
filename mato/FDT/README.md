@@ -1,4 +1,4 @@
-# Dataset “Flussi di Traffico (tempo reale)” – Torino
+# Dataset “Flussi di Traffico (tempo reale)” - Torino
 
 ## Cos’è
 
@@ -14,7 +14,7 @@ Per ogni sezione vengono forniti:
 * Coordinate geografiche (WGS‑84)
 * Numero di veicoli (`flow`)
 * Velocità media (`speed`, km/h)
-* Direzione (`direction`, +/–)
+* Direzione (`direction`, +/-)
 * Accuratezza (`accuracy`)
 
 I valori sono **indicativi** dello stato del traffico e non necessariamente corrispondono al conteggio esatto dei veicoli.
@@ -33,7 +33,7 @@ Il comando `map` esegue anche `download` e `csv` se i file mancano.
 
 ---
 
-## convert\_fdt.py – Toolkit
+## convert\_fdt.py - Toolkit
 
 ```
 1. Scarica l’XML in tempo reale              →  python convert_fdt.py download
@@ -60,7 +60,7 @@ FDT
 ## License & attribution
 
 Dataset sotto **IODL v2.0**. Ogni redistribuzione **deve** citare
-“Città di Torino – dataset *Flussi di traffico misurati in tempo reale*”.
+“Città di Torino - dataset *Flussi di traffico misurati in tempo reale*”.
 Map tiles © OpenStreetMap contributors (*ODbL*).
 
 ---

@@ -1,5 +1,4 @@
 # src/odhconnector/risk/config.yaml
-
 memberships:
   traffic:
     universe: [0.0, 1.0]    # valori min/max

@@ -7,7 +7,7 @@ Genera una mappa interattiva del percorso reale tra inizio e fine e degli eventi
 Usage:
     python demos/demo_traffic_map.py \
       --start 46.07,11.12 --end 46.4983,11.3548 \
-      --buffer 1 --hours 400 \
+      --buffer 10 --hours 1000 \
       --output demos/web-demo/traffic_map.html
 """
 import argparse
@@ -156,7 +156,7 @@ def main():
         last_n_hours=args.hours,
     )
 
-    events = conn.get_events(all=True)
+    events = conn.get_events(within_km=args.buffer, last_n_hours=args.hours)
     events_on_route = filter_along_route(events, route, args.buffer)
     for ev in events_on_route:
         ev.distance_km = haversine(start, (ev.lat, ev.lon))

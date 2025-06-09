@@ -8,14 +8,14 @@ from odhconnector.connectors.connector import ODHConnector
 def main():
     conn = ODHConnector(
         odh_base_url="https://mobility.api.opendatahub.com",
-        odh_api_key="",                         # ← qui
+        odh_api_key="",
         position_provider=lambda: (46.07, 11.12),
         route_segment="*", 
         auto_refresh=True, 
         last_n_hours=1000
     )
 
-    km = 10
+    km = 20
 
     print("Incidenti:", len(conn.get_incidents(within_km=km)))
     print("Code:", len(conn.get_queues(within_km=km)))
