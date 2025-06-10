@@ -1,13 +1,21 @@
-"""ODHConnector: public entry‑point used by MinervaS.
+"""ODHConnector: public entry-point used by MinervaS.
 
 Unifica in un *unico* file il connettore verso gli endpoint traffico **e**
 meteo di OpenDataHub, senza sottoclassare alcuna implementazione esterna.
 """
 from __future__ import annotations
 
+import os
+import time
 import logging
+import threading
 from datetime import datetime, timedelta, timezone
 from typing import Callable, Iterable, List, Optional, Tuple
+
+import folium
+import requests
+from rich.console import Console
+from rich.table import Table
 
 from ..models import Alert, Event, Incident, WeatherIndex, WorkZone
 from ..utils import haversine
@@ -19,6 +27,7 @@ from ..risk.fuzzy_engine import build_fuzzy_controller
 from skfuzzy import control as ctrl
 
 logger = logging.getLogger(__name__)
+console = Console()
 
 
 class ODHConnector:
@@ -27,7 +36,7 @@ class ODHConnector:
     Args:
         odh_base_url: Base URL of the OpenDataHub API (mobility domain).
         odh_api_key:  Optional API key.
-        position_provider: Callable that returns *(lat, lon)* in WGS‑84.
+        position_provider: Callable that returns *(lat, lon)* in WGS-84.
         route_segment: Identifier of the route segment (e.g. ``'A22_Trentino'``).
         auto_refresh: When ``True`` the cache is refreshed transparently.
         last_n_hours: Default time window (hours) for ``get_events`` filtering.
@@ -83,7 +92,7 @@ class ODHConnector:
     # Data download & caching
     # ------------------------------------------------------------------
 
-    def refresh_data(self) -> None:  # noqa: C901 – keeps traffic+meteo together
+    def refresh_data(self) -> None:
         """Download latest traffic + weather data and cache them."""
         pos = self.position_provider()
 
@@ -93,7 +102,7 @@ class ODHConnector:
             ev.distance_km = haversine(pos, (ev.lat, ev.lon))
         self._cache["events"] = events
 
-        # ── weather (soft‑fail) -----------------------------------------
+        # ── weather (soft-fail) -----------------------------------------
         try:
             self._cache["weather"] = self._weather_adapter.fetch_weather(pos)
         except Exception as exc:  # pylint: disable=broad-except
@@ -122,12 +131,12 @@ class ODHConnector:
         self._maybe_refresh()
         events: list[Event] = self._cache.get("events", [])  # type: ignore[assignment]
 
-        # 1) time‑based filter ------------------------------------------
+        # 1) time-based filter ------------------------------------------
         hrs = last_n_hours if last_n_hours is not None else self.last_n_hours
         cutoff = datetime.now(timezone.utc) - timedelta(hours=hrs)
         events = [e for e in events if e.timestamp >= cutoff]
 
-        # 2) distance‑based filter --------------------------------------
+        # 2) distance-based filter --------------------------------------
         if within_km is not None:
             pos = self.position_provider()
             events = [e for e in events if e.distance_km is not None and e.distance_km <= within_km]
@@ -253,7 +262,7 @@ class ODHConnector:
             alerts.append(Alert(f"Chiusura: {c.description}", 0.0, 1.0))
         if groups["manifest"]:
             alerts.append(Alert("Manifestazioni: possibili deviazioni (–30%)", 0.7, 0.5))
-        # weather‑related -----------------------------------------------
+        # weather-related -----------------------------------------------
         if groups["snow"]:
             alerts.append(Alert("Nevischio: ridurre di 30%", 0.7, 0.6))
         if groups["fog"]:
@@ -323,22 +332,308 @@ class ODHConnector:
         last_n_hours: Optional[int] = None,
         verbose: bool = False,
     ) -> float:
+        """Compute a speed factor in [0,1] by combining normalized risks and fatigue/deadline."""
+        # 1) compute risks
         traffic_risk = self.compute_attention_score(within_km=within_km, last_n_hours=last_n_hours)
-        wx = self.get_weather_index() or WeatherIndex(temperature_c=15.0, rain_intensity=0.0, visibility=1.0, frost_risk=0.0)  # type: ignore[arg-type]
+        wx = self.get_weather_index() or WeatherIndex(temperature_c=15.0, rain_intensity=0.0, visibility=1.0, frost_risk=0.0)
         weather_risk = max(wx.rain_intensity, 1 - wx.visibility)
-        temp_c = wx.temperature_c
-
-        sim = self._fuzzy_sim
-        sim.input["traffic"] = traffic_risk
-        sim.input["weather"] = weather_risk
-        sim.input["fatigue"] = fatigue
-        sim.input["deadline"] = deadline_pressure
-        sim.input["temp"] = temp_c
-        sim.compute()
-        sf = float(sim.output["speed"])
+        
+        # 2) linear combination weights (sum=1)
+        w_traffic = 0.5
+        w_weather = 0.3
+        w_fatigue = 0.1
+        w_deadline = 0.1
+        
+        # Calculate base speed factor considering risks and fatigue
+        base_sf = 1.0 - (w_traffic * traffic_risk + w_weather * weather_risk + w_fatigue * fatigue)
+        
+        # Apply deadline pressure: higher pressure increases speed factor
+        sf = base_sf + (w_deadline * deadline_pressure)
+        
+        sf = max(0.0, min(1.0, sf))
         if verbose:
             logger.debug(
-                "Fuzzy: traffic=%.2f weather=%.2f fatigue=%.2f deadline=%.2f temp=%.1f → speed=%.2f",
-                traffic_risk, weather_risk, fatigue, deadline_pressure, temp_c, sf,
+                "Speed factor → traffic: %.2f, weather: %.2f, fatigue: %.2f, deadline: %.2f => sf: %.2f",
+                traffic_risk, weather_risk, fatigue, deadline_pressure, sf
             )
-        return max(0.0, min(1.0, sf))
+        return sf
+
+    # ------------------------------------------------------------------
+    # Dashboard & visualization
+    # ------------------------------------------------------------------
+
+    def run_dashboard(
+        self,
+        *,
+        start: Tuple[float,float],
+        end:   Tuple[float,float],
+        buffer_km:    float = 5.0,
+        spacing_km:   float = 10.0,
+        hours:        int   = 6,
+        output_html:  str   = "dashboard_map.html",
+        fatigue:      float = 0.0,
+        deadline:     float = 0.0,
+    ) -> None:
+        """Prints a rich dashboard and saves an interactive HTML map.
+        
+        Args:
+            start: Starting coordinates (lat, lon) in WGS-84.
+            end: Ending coordinates (lat, lon) in WGS-84.
+            buffer_km: Search radius around route for events/weather.
+            spacing_km: Distance between weather sampling points.
+            hours: Time window for event filtering.
+            output_html: Path for the generated HTML map file.
+            fatigue: Driver fatigue level (0.0-1.0) for speed calculations.
+            deadline: Deadline pressure level (0.0-1.0) for speed calculations.
+        """
+        # 1) fetch route geometry & sample points for analysis ----------
+        route = self._fetch_route(start, end)
+        samples = self._sample_route(route, spacing_km)
+
+        # 2) gather all relevant data -----------------------------------
+        events  = self.get_events(within_km=buffer_km, last_n_hours=hours)
+        wx_pts  = self.get_weather(samples)
+        alerts  = self.generate_alerts(within_km=buffer_km, last_n_hours=hours)
+        attn    = self.compute_attention_score(within_km=buffer_km, last_n_hours=hours)
+
+        # 3) compute speed factor for each sample point ----------------
+        speed_pts: List[Tuple[Tuple[float,float],float]] = []
+        for pos, wx in wx_pts:
+            # temporarily cache weather for this position
+            self._cache['weather'] = wx
+            sf = self.get_speed_factor(fatigue=fatigue, deadline_pressure=deadline,
+                                        within_km=buffer_km, last_n_hours=hours)
+            speed_pts.append((pos, sf))
+
+        # 4) print rich console summary --------------------------------
+        console.rule("🚦  Traffic & Weather Dashboard  🚦")
+        
+        # events summary table
+        tbl = Table(title=f"Events (last {hours}h)")
+        tbl.add_column("Type"); tbl.add_column("Count", justify="right")
+        for full_key, count in self.get_events_summary(last_n_hours=hours, within_km=buffer_km).items():
+            # Prendi solo la parte italiana prima del '|'
+            name_it = full_key.split('|')[0].strip()
+            tbl.add_row(name_it, str(count))
+        console.print(tbl)
+
+        # alerts section
+        if alerts:
+            console.print("[bold red]Alerts:[/bold red]")
+            for a in alerts:
+                console.print(f"• {a.message}  (relevance={a.relevance:.2f})")
+        console.print(f"\nAttention score: [bold]{attn:.2f}[/bold]\n")
+
+        # speed advice table
+        stbl = Table(title="Speed advice per sample")
+        stbl.add_column("Lat,Lon"); stbl.add_column("Speed factor", justify="right")
+        for (lat,lon),sf in speed_pts:
+            stbl.add_row(f"{lat:.4f},{lon:.4f}", f"{sf:.2f}")
+        console.print(stbl)
+
+        # 5) generate interactive map and save to file -----------------
+        m = self._build_map(route, events, wx_pts, speed_pts, buffer_km)
+        os.makedirs(os.path.dirname(output_html) or ".", exist_ok=True)
+        m.save(output_html)
+        console.print(f"\nInteractive map saved to [green]{output_html}[/green]")
+
+    # ------------------------------------------------------------------
+    # Live monitoring
+    # ------------------------------------------------------------------
+
+    def watch_live(
+        self,
+        *,
+        within_km: float,
+        callback: Callable[[Event],None],
+        poll_seconds: int = 60,
+    ) -> threading.Thread:
+        """Background thread calling callback(e) on new important events.
+        
+        Args:
+            within_km: Search radius for events monitoring.
+            callback: Function to call when new important events are detected.
+            poll_seconds: Polling interval for checking new events.
+            
+        Returns:
+            The background thread (already started).
+        """
+        start_time = datetime.now(timezone.utc)
+        
+        def loop():
+            nonlocal start_time
+            while True:
+                time.sleep(poll_seconds)
+                self.refresh_data()  # Force refresh to get latest data
+                
+                evts = self.get_events(within_km=within_km)
+                for e in evts:
+                    # Check if event timestamp is after our monitoring start time
+                    if e.timestamp > start_time and self._is_important(e):
+                        callback(e)
+                
+        t = threading.Thread(target=loop, daemon=True)
+        t.start()
+        return t
+
+    # ------------------------------------------------------------------
+    # Internal route & mapping helpers
+    # ------------------------------------------------------------------
+
+    @staticmethod
+    def _fetch_route(start: Tuple[float,float], end: Tuple[float,float]) -> List[Tuple[float,float]]:
+        """Fetch route geometry from OSRM routing service."""
+        url = (
+            f"http://router.project-osrm.org/route/v1/driving/{start[1]},{start[0]};{end[1]},{end[0]}"
+            "?overview=full&geometries=geojson"
+        )
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        coords = resp.json()['routes'][0]['geometry']['coordinates']
+        # OSRM returns [lon, lat] but we use [lat, lon]
+        return [(lat, lon) for lon, lat in coords]
+
+    @staticmethod
+    def _sample_route(route: List[Tuple[float,float]], spacing_km: float) -> List[Tuple[float,float]]:
+        """Sample points along route at regular distance intervals."""
+        out = [route[0]]  # always include start point
+        acc = 0.0
+        
+        for a, b in zip(route, route[1:]):
+            acc += haversine(a, b)
+            if acc >= spacing_km:
+                out.append(b)
+                acc = 0.0  # reset accumulator
+                
+        # ensure end point is included
+        if out[-1] != route[-1]:
+            out.append(route[-1])
+        return out
+
+    def _build_map(
+        self,
+        route: List[Tuple[float, float]],
+        events: List[Event],
+        wx_pts: List[Tuple[Tuple[float, float], WeatherIndex]],
+        speed_pts: List[Tuple[Tuple[float, float], float]],
+        buffer_km: float
+    ) -> folium.Map:
+        """Constructs an interactive Folium map showing route, traffic, weather, and speed advice."""
+        # Center on middle of route
+        m = folium.Map(location=route[len(route)//2], zoom_start=10)
+        # Plot route
+        folium.PolyLine(
+            route,
+            color="blue",
+            weight=6,
+            opacity=0.7,
+            tooltip="Route"
+        ).add_to(m)
+
+        # Traffic events
+        color_map = {
+            "incident": "red",
+            "coda": "orange",
+            "stau": "orange",
+            "cantiere": "blue",
+            "closure": "black",
+            "chiusura": "black",
+            "manifest": "green",
+        }
+        for ev in events:
+            ev_type = ev.type.lower()
+            # choose first matching key
+            color = next((col for key, col in color_map.items() if key in ev_type), "purple")
+            popup = folium.Popup(
+                f"<b>{ev.type}</b><br>{ev.description}<br>"
+                f"{ev.timestamp.astimezone(timezone.utc).strftime('%Y-%m-%d %H:%M')} UTC<br>"
+                f"Dist: {ev.distance_km:.1f} km",
+                max_width=300,
+            )
+            folium.CircleMarker(
+                location=(ev.lat, ev.lon),
+                radius=6,
+                color=color,
+                fill=True,
+                fill_opacity=0.7,
+                popup=popup
+            ).add_to(m)
+
+        # Weather points
+        for (lat, lon), idx in wx_pts:
+            # marker color by temperature
+            if idx.temperature_c < 0:
+                col = "navy"
+            elif idx.temperature_c < 10:
+                col = "blue"
+            elif idx.temperature_c < 20:
+                col = "green"
+            elif idx.temperature_c < 30:
+                col = "orange"
+            else:
+                col = "red"
+            popup = folium.Popup(
+                f"<b>{idx.temperature_c:.1f} °C</b><br>"
+                f"Rain idx: {idx.rain_intensity:.2f}<br>"
+                f"Vis idx: {idx.visibility:.2f}<br>"
+                f"Frost risk: {'yes' if idx.frost_risk else 'no'}<br>"
+                f"Speed advice: ×{next((sf for (p, sf) in speed_pts if p == (lat, lon)), 0):.2f}",
+                max_width=260,
+            )
+            folium.CircleMarker(
+                location=(lat, lon),
+                radius=6,
+                color=col,
+                fill=True,
+                fill_opacity=0.8,
+                popup=popup
+            ).add_to(m)
+
+                # Legend HTML overlay
+        legend = """
+        <div style="position: fixed; bottom: 50px; left: 50px; width: 240px; \
+                    background: white; border:2px solid grey; z-index:9999; font-size:14px; padding:10px;">
+          &nbsp;<b>Traffic legend</b><br>
+          &nbsp;<i class='fa fa-circle' style='color:red'></i>&nbsp;Incident<br>
+          &nbsp;<i class='fa fa-circle' style='color:orange'></i>&nbsp;Queue<br>
+          &nbsp;<i class='fa fa-circle' style='color:blue'></i>&nbsp;WorkZone<br>
+          &nbsp;<i class='fa fa-circle' style='color:black'></i>&nbsp;Closure<br>
+          &nbsp;<i class='fa fa-circle' style='color:green'></i>&nbsp;Manifest<br>
+          &nbsp;<i class='fa fa-circle' style='color:purple'></i>&nbsp;Other<br><br>
+          &nbsp;<b>Weather legend (°C)</b><br>
+          &nbsp;<i class='fa fa-circle' style='color:navy'></i>&nbsp;< 0<br>
+          &nbsp;<i class='fa fa-circle' style='color:blue'></i>&nbsp;0-9<br>
+          &nbsp;<i class='fa fa-circle' style='color:green'></i>&nbsp;10-19<br>
+          &nbsp;<i class='fa fa-circle' style='color:orange'></i>&nbsp;20-29<br>
+          &nbsp;<i class='fa fa-circle' style='color:red'></i>&nbsp;>=30<br><br>
+          &nbsp;<b>Speed advice</b><br>
+          &nbsp;× factor on marker popup
+        </div>
+        """
+        m.get_root().html.add_child(folium.Element(legend))
+
+        # Speed advice icons - use built-in icons instead of custom logo
+        for (lat, lon), sf in speed_pts:
+            # Color code based on speed factor
+            if sf >= 0.8:
+                icon_color = 'green'
+            elif sf >= 0.6:
+                icon_color = 'orange'
+            else:
+                icon_color = 'red'
+            
+            folium.Marker(
+                location=(lat, lon),
+                icon=folium.Icon(color=icon_color, icon='tachometer-alt', prefix='fa'),
+                tooltip=f"Speed factor: {sf:.2f} (buffer: {buffer_km}km)",
+                popup=f"Recommended speed factor: {sf:.2f}<br>Search radius: {buffer_km}km"
+            ).add_to(m)
+
+        return m
+
+
+    @staticmethod
+    def _is_important(ev: Event) -> bool:
+        """Determine if an event is important enough to trigger alerts."""
+        return (getattr(ev, 'severity', 0) >= 3 or 
+                any(k in ev.type.lower() for k in ('chiusura','incident','manifest')))

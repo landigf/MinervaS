@@ -2,7 +2,7 @@
 import os
 import sys
 import pathlib
-project = 'MinervaS‑ODH Connector'
+project = 'MinervaS-ODH Connector'
 author = 'Elettra Palmisano & Gennaro Francesco Landi'
 release = '0.1.0'
 copyright = ''

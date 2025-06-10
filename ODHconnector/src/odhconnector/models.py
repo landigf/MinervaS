@@ -31,7 +31,7 @@ class WeatherIndex:
 
 @dataclass
 class Alert:
-    """Fuzzy‑logic advisory returned to MinervaS."""
+    """Fuzzy-logic advisory returned to MinervaS."""
     message: str
     suggested_speed_factor: float  # 0-1 multiplier w.r.t. limit
     relevance: float               # confidence 0-1
