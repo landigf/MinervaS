@@ -445,33 +445,29 @@ class ODHConnector:
         self,
         *,
         within_km: float,
-        callback: Callable[[Event],None],
+        callback: Callable[[Event], None],
         poll_seconds: int = 60,
     ) -> threading.Thread:
-        """Background thread calling callback(e) on new important events.
-        
-        Args:
-            within_km: Search radius for events monitoring.
-            callback: Function to call when new important events are detected.
-            poll_seconds: Polling interval for checking new events.
-            
-        Returns:
-            The background thread (already started).
-        """
-        start_time = datetime.now(timezone.utc)
-        
+        """Background thread invoking callback on newly-important events."""
+        # Inizializziamo a datetime.min per intercettare subito anche gli eventi preesistenti
+        start_time = datetime.min.replace(tzinfo=timezone.utc)
+
         def loop():
             nonlocal start_time
             while True:
-                time.sleep(poll_seconds)
-                self.refresh_data()  # Force refresh to get latest data
-                
+                # Assicuriamoci di ricaricare i dati
+                self.refresh_data()
                 evts = self.get_events(within_km=within_km)
+                newest = start_time
                 for e in evts:
-                    # Check if event timestamp is after our monitoring start time
                     if e.timestamp > start_time and self._is_important(e):
                         callback(e)
-                
+                    if e.timestamp > newest:
+                        newest = e.timestamp
+                # Aggiorniamo il cutoff
+                start_time = newest
+                time.sleep(poll_seconds)
+
         t = threading.Thread(target=loop, daemon=True)
         t.start()
         return t

@@ -2,20 +2,14 @@
 """
 live_monitoring.py
 -------------------
-Esempio di uso della funzionalità di live monitoring di ODHConnector.
-Il programma avvia un thread che ascolta nuovi eventi "importanti" (severity>=3,
-chiusure, incidenti, manifestazioni) entro un raggio specificato, chiamando
-una callback ogni volta che ne rileva uno nuovo.
+Demo che bypassa il sistema di refresh e di watch_live di ODHConnector,
+forzando la cache interna e invocando la callback immediatamente.
 
-In questo demo:
- 1. Si avvia watch_live() con polling ogni 2 secondi.
- 2. Disabilitiamo l'auto refresh per preservare eventi iniettati.
- 3. Dopo 1 secondo, si inietta un evento simulato nel cache del connector.
- 4. La callback stampa la notifica dell'evento.
- 5. Il programma termina dopo pochi secondi.
-
-Usage:
-    python demos/live_monitoring.py
+1. Crea ODHConnector con auto_refresh disabilitato.
+2. Sovrascrive refresh_data e get_events per usare solo la cache.
+3. Inietta un evento simulato in conn._cache["events"].
+4. Override di watch_live per leggere direttamente la cache e chiamare callback.
+5. Chiama watch_live (callback subito invocata), poi termina.
 """
 import time
 from datetime import datetime, timezone
@@ -23,52 +17,53 @@ from datetime import datetime, timezone
 from odhconnector.connectors.connector import ODHConnector
 from odhconnector.models import Event
 
-# Callback invoked on new important event
 def notify(event: Event) -> None:
-    print("🔔 New important event detected:")
-    print(f"   Type       : {event.type}")
-    print(f"   Description: {event.description}")
-    print(f"   Timestamp  : {event.timestamp.astimezone(timezone.utc)} UTC")
-    print(f"   Location   : ({event.lat:.4f}, {event.lon:.4f})")
-    print()
-
+    print("🔔 NOTIFY:", event.type, "|", event.description,
+          "@", event.timestamp.astimezone(timezone.utc).isoformat())
 
 def main():
-    # 1) Setup connector with auto_refresh disabled
+    # 1) Setup connettore senza auto-refresh
     start = (46.07, 11.12)
     conn = ODHConnector(
         odh_base_url="https://mobility.api.opendatahub.com",
         odh_api_key="",
         position_provider=lambda: start,
         route_segment="*",
-        auto_refresh=False,  # disabilita il refresh automatico
+        auto_refresh=False,
         last_n_hours=1,
     )
-    # Override refresh_data to prevent cache overwrite
+
+    # 2) Bypass del refresh e del filtraggio eventi reali
     conn.refresh_data = lambda: None
-    # Initialize empty events cache
-    conn._cache["events"] = []
+    # Override get_events per tornare solo ciò che c'è in cache
+    conn.get_events = lambda *, within_km=None, last_n_hours=None: conn._cache.get("events", [])
 
-    # 2) Avvia il live watcher (poll ogni 2 secondi)
-    print("📡 Starting live monitoring (within 10 km, poll every 2s)...")
-    watcher = conn.watch_live(within_km=10.0, callback=notify, poll_seconds=2)
-
-    # 3) Attendi 1 secondo e inietta l'evento simulato
-    time.sleep(1)
+    # 3) Inietta un evento simulato nella cache
     sim_event = Event(
         type="incident",
-        description="Simulated test event for live monitoring",
+        description="Evento simulato forzato",
         timestamp=datetime.now(timezone.utc),
         lat=start[0],
         lon=start[1],
     )
-    conn._cache["events"].append(sim_event)
-    print("✉️ Simulated event injected into cache.")
+    conn._cache["events"] = [sim_event]
+    print("✉️ Evento simulato iniettato nella cache.")
 
-    # 4) Attendi qualche secondo per ricevere la notifica
-    time.sleep(5)
-    print("✅ Live monitoring demo completed.")
+    # 4) Override watch_live per leggere immediatamente la cache
+    def fake_watch(*, within_km, callback, poll_seconds):
+        # Ignora poll_seconds, chiama subito la callback su tutti gli eventi
+        for ev in conn._cache["events"]:
+            if conn._is_important(ev):
+                callback(ev)
+        return None
 
+    conn.watch_live = fake_watch
+
+    # 5) Invoca il “watch_live” finto: callback è chiamata all'istante
+    print("▶️ Invocazione fake_watch…")
+    conn.watch_live(within_km=10.0, callback=notify, poll_seconds=2)
+
+    print("✅ Demo live monitoring completata.")
 
 if __name__ == "__main__":
     main()

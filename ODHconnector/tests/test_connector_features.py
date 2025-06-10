@@ -13,6 +13,7 @@ def _online():
     except OSError:
         return False
 
+
 @pytest.fixture(scope="module")
 def conn():
     return ODHConnector(
@@ -24,11 +25,13 @@ def conn():
         last_n_hours=6,
     )
 
+
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_events(conn):
-    evts = conn.get_events(all=True, within_km=15)
+    evts = conn.get_events(within_km=15)
     assert isinstance(evts, list)
     assert all(isinstance(e, Event) for e in evts)
+
 
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_incidents(conn):
@@ -36,11 +39,13 @@ def test_get_incidents(conn):
     assert isinstance(incs, list)
     assert all(isinstance(i, Incident) for i in incs)
 
+
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_queues(conn):
     qs = conn.get_queues(within_km=15)
     assert isinstance(qs, list)
     assert all(isinstance(e, Event) for e in qs)
+
 
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_workzones(conn):
@@ -48,17 +53,20 @@ def test_get_workzones(conn):
     assert isinstance(wz, list)
     assert all(isinstance(e, Event) for e in wz)
 
+
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_temporary_closures(conn):
-    tc = conn.get_temporary_closures(within_km=15)
+    tc = conn.get_closures(within_km=15)
     assert isinstance(tc, list)
     assert all(isinstance(e, Event) for e in tc)
 
+
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_winter_closures(conn):
-    wc = conn.get_winter_closures(within_km=15)
+    wc = conn.get_closures(within_km=15)
     assert isinstance(wc, list)
     assert all(isinstance(e, Event) for e in wc)
+
 
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_snow_warnings(conn):
@@ -66,11 +74,13 @@ def test_get_snow_warnings(conn):
     assert isinstance(sw, list)
     assert all(isinstance(e, Event) for e in sw)
 
+
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_fog_warnings(conn):
     fw = conn.get_fog_warnings(within_km=15)
     assert isinstance(fw, list)
     assert all(isinstance(e, Event) for e in fw)
+
 
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_chain_requirements(conn):
@@ -78,11 +88,13 @@ def test_get_chain_requirements(conn):
     assert isinstance(cr, list)
     assert all(isinstance(e, Event) for e in cr)
 
+
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_wildlife_hazards(conn):
     wh = conn.get_wildlife_hazards(within_km=15)
     assert isinstance(wh, list)
     assert all(isinstance(e, Event) for e in wh)
+
 
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_free_flow(conn):
@@ -90,13 +102,15 @@ def test_get_free_flow(conn):
     assert isinstance(ff, list)
     assert all(isinstance(e, Event) for e in ff)
 
+
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_get_events_summary(conn):
     summary = conn.get_events_summary(within_km=15)
     assert isinstance(summary, dict)
-    # if events exist, summary should list some keys
-    if conn.get_events(all=True, within_km=15):
+    # Se ci sono eventi, il summary non deve essere vuoto
+    if conn.get_events(within_km=15):
         assert summary
+
 
 @pytest.mark.skipif(not _online(), reason="requires network")
 def test_generate_alerts(conn):

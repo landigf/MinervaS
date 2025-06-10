@@ -35,22 +35,25 @@
 
 ```text
 ODHconnector/
-│   pyproject.toml   # build metadata & deps (PEP 621)
-│   README.md        # ← this file
-│   .env.example     # sample env vars
 │
-├── src/
-│   └── odhconnector/  # package root
-│       ├── models.py
-│       ├── utils.py
-│       ├── connectors/
-│       │   └── connector.py
-│       └── adapters/
-│           ├── weather_adapter.py
-│           └── traffic_adapter.py
+├── src/odhconnector/
+│   ├── adapters/            
+│   │   ├── weather_adapter.py
+│   │   └── traffic_adapter.py
+│   ├── connectors/          # Main ODHConnector interface
+│   │   └── connector.py
+│   ├── models.py            # Dataclasses for WeatherIndex, Incident, etc.
+│   ├── utils.py             
+│   └── risk/                # Fuzzy logic risk estimation engine
+│       ├── fuzzy_engine.py
+│       └── membership.py
 │
-├── tests/           # pytest test suite
-└── docs/            # Sphinx documentation source
+├── tests/                   # Pytest-based tests
+├── docs/                    # Sphinx doc sources
+├── .env.example             # Sample env vars
+├── requirements.txt         # Dependencies (editable)
+├── pyproject.toml           # Build & metadata
+└── README.md                # ← You are here
 ```
 
 ## Prerequisites

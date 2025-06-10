@@ -11,6 +11,8 @@ Requires-Dist: scikit-fuzzy<1,>=0.4
 Requires-Dist: pyyaml<7,>=6.0
 Requires-Dist: networkx<4,>=3.0
 Requires-Dist: scipy<2,>=1.10
+Requires-Dist: rich<14,>=13.0
+Requires-Dist: folium<1,>=0.14
 Provides-Extra: docs
 Requires-Dist: sphinx; extra == "docs"
 Requires-Dist: sphinx-autodoc-typehints; extra == "docs"

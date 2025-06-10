@@ -1,4 +1,10 @@
-requests==2.32.0
-python-dotenv==1.0.1
-scikit-fuzzy==0.4.2
+requests>=2.32,<3
+python-dotenv>=1.0,<2
+scikit-fuzzy>=0.4,<1
 pytest==8.2.0
+pyyaml>=6.0,<7
+networkx>=3.0,<4
+scipy>=1.10,<2
+rich>=13.0,<14
+folium>=0.14,<1
+skfuzzy>=0.4,<1
