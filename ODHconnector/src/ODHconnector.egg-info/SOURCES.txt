@@ -16,7 +16,10 @@ src/odhconnector/connectors/connector.py
 src/odhconnector/risk/__init__.py
 src/odhconnector/risk/fuzzy_engine.py
 src/odhconnector/risk/membership.py
+tests/test_connector_alerts_and_scores.py
 tests/test_connector_features.py
-tests/test_fuzzy_engine.py
+tests/test_connector_filter_and_summary.py
+tests/test_connector_route_utils.py
+tests/test_connector_weather.py
 tests/test_incidents_live.py
 tests/test_sanity.py
