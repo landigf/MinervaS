@@ -28,7 +28,7 @@ Live/integration tests will be automatically skipped if no network is detected.
 
 * **`tests/test_sanity.py`**
 
-  * Smoke tests for connector instantiation and basic end‑to‑end calls.
+  * Smoke tests for connector instantiation and basic end-to-end calls.
 
 * **`tests/test_connector_features.py`**
 

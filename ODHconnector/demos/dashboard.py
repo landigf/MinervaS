@@ -1,12 +1,12 @@
 #!/usr/bin/env python
-"""High‑level CLI demo that showcases **ODHConnector** capabilities.
+"""High-level CLI demo that showcases **ODHConnector** capabilities.
 
 Example
 ~~~~~~~
 $ python demos/dashboard.py \
     --start 46.07,11.12 --end 46.4983,11.3548 \
-    --buffer 30 --spacing 8 --hours 12 \
-    --output dashboards/combined_map.html
+    --buffer 30 --spacing 8 --hours 1200 --deadline 1 \
+    --output demos/dashboards/combined_map.html
 
 The script prints a rich console dashboard and saves an HTML map.
 """

@@ -11,7 +11,7 @@ Per ogni sezione vengono forniti:
 * ID della strada nel sistema interno 5T (`Road_LCD`)
 * Nome della strada in cui è localizzato il sensore (`Road_name`)
 * Posizione del sensore dall'inizio della strada (`offset`, m)
-* Coordinate geografiche (WGS‑84)
+* Coordinate geografiche (WGS-84)
 * Numero di veicoli (`flow`)
 * Velocità media (`speed`, km/h)
 * Direzione (`direction`, +/-)

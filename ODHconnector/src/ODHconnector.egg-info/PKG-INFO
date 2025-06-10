@@ -45,7 +45,7 @@ Requires-Dist: pytest; extra == "test"
 
 ## Features
 
-* **ODHConnector** — single entry‑point class with a minimal public API (`get_incidents()`, `get_weather_index()`, `generate_alerts()`, …).
+* **ODHConnector** — single entry-point class with a minimal public API (`get_incidents()`, `get_weather_index()`, `generate_alerts()`, …).
 * **Modular Adapters** — separate weather & traffic adapters you can swap or extend.
 * **In-memory caching** with opt-in auto-refresh.
 * **Fuzzy-logic stubs** ready for your advisory rules.

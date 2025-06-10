@@ -3,7 +3,7 @@
 convert_ztl.py - Toolkit per il dataset "Perimetro e orari ZTL" di Torino
 ----------------------------------------------------------------------------
 Funzionalità principali:
-  1. Scarica l'XML dal servizio open‑data 5T (comando `download`)
+  1. Scarica l'XML dal servizio open-data 5T (comando `download`)
   2. Converte il file in GeoJSON (comando `geojson`)
   3. Crea una mappa HTML autonoma con Folium/Leaflet (comando `map`)
 
@@ -115,7 +115,7 @@ def convert_to_geojson(xml_path: Path = XML_PATH, geojson_path: Path = GEOJSON_P
 # ---------------------------------------------------------------------------
 
 def build_folium_map(geojson_path: Path = GEOJSON_PATH, html_path: Path = HTML_PATH) -> Path:
-    """Genera una mappa HTML auto‑contenuta via Folium."""
+    """Genera una mappa HTML auto-contenuta via Folium."""
     import folium
 
     gj = json.loads(geojson_path.read_text())
